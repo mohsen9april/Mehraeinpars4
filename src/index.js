@@ -7,9 +7,9 @@ import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 import HttpApi from "i18next-http-backend";
 import "bootstrap/dist/js/bootstrap";
-
 import "bootstrap/dist/css/bootstrap.min.css";
 import "flag-icon-css/css/flag-icon.min.css";
+import { BrowserRouter } from "react-router-dom";
 
 i18n
   .use(initReactI18next)
@@ -37,7 +37,9 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <Suspense fallback={loading}>
     <StrictMode>
-      <App />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     </StrictMode>
   </Suspense>
 );

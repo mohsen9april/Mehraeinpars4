@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 import cookie from "js-cookie";
 import "./App.css";
+import { Route, Routes, NavLink } from "react-router-dom";
 
 const language = [
   {
@@ -51,13 +52,37 @@ function App() {
       <header>
         <nav>
           <div className="d-flex justify-content-end">
-            <a href="/#">{t("home")}</a>
-            <a href="/#">{t("products")}</a>
-            <a href="/#">{t("commercial")}</a>
-            <a href="/#">{t("qc")}</a>
-            <a href="/#">{t("newline")}</a>
-            <a href="/#">{t("contactus")}</a>
-            <a href="/#">{t("aboutus")}</a>
+            <NavLink
+              to="/"
+              style={({ isActive }) =>
+                isActive
+                  ? {
+                      color: "#fff",
+                      background: "#CC9D69",
+                    }
+                  : { color: "#000000", background: "#ffffff" }
+              }
+            >
+              {t("home")}
+            </NavLink>
+            <NavLink
+              to="/Products"
+              style={({ isActive }) =>
+                isActive
+                  ? {
+                      color: "#fff",
+                      background: "#CC9D69",
+                    }
+                  : { color: "#000000", background: "#ffffff" }
+              }
+            >
+              {t("products")}
+            </NavLink>
+            <NavLink to="/#">{t("commercial")}</NavLink>
+            <NavLink to="/#">{t("qc")}</NavLink>
+            <NavLink to="/#">{t("newline")}</NavLink>
+            <NavLink to="/#">{t("contactus")}</NavLink>
+            <NavLink to="/#">{t("aboutus")}</NavLink>
             <div>
               <button
                 className="btn btn-link dropdown-toggle"
@@ -96,6 +121,14 @@ function App() {
 
       <div className="d-flex flex-column align-items-center">
         <h1 className="fw-bold mb-3">{t("welcome_message")}</h1>
+      </div>
+
+      <div>
+        <Routes>
+          <Route excact path="/" element={<div>Home</div>} />
+          <Route path="/About" element={<div>About</div>} />
+          <Route path="/Products" element={<div>Products</div>} />
+        </Routes>
       </div>
     </div>
   );
