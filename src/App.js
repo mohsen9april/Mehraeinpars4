@@ -9,6 +9,7 @@ import Businessunit from "./pages/Businessunit";
 import Newline from "./pages/Newline";
 import Contactus from "./pages/Contactus";
 import Aboutus from "./pages/Aboutus";
+import Error from "./pages/Error";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/Newline" element={<Newline />} />
           <Route path="/Contactus" element={<Contactus />} />
           <Route path="/Aboutus" element={<Aboutus />} />
+          <Route path="*" element={<Error />} />
         </Routes>
       </div>
     </div>

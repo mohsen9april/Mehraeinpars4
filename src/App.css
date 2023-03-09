@@ -13,7 +13,8 @@
 }
 
 /* --------------------------- */
-/* ----- Navigation Bar ----- */
+/* ----- Navigation Bar ------ */
+/* --------------------------- */
 header {
   display: flex;
   align-items: center;
@@ -97,3 +98,66 @@ nav {
     font-size: 1rem;
   }
 }
+
+/* Home--------------------------------------------------------- */
+
+/* NewLine -------------------------------------------------*/
+
+section.module.parallax div.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+section.module.parallax {
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+section.module.parallax-1 {
+  background-image: url("https://www.cssscript.com/demo/pure-css-parallax-background-images/img/gCanyon.jpg");
+}
+
+section.module.parallax-2 {
+  background-image: url("https://www.cssscript.com/demo/pure-css-parallax-background-images/img/rMountains.jpg");
+}
+
+section.module.parallax-3 {
+  background-image: url("https://www.cssscript.com/demo/pure-css-parallax-background-images/img/niagra.jpg");
+}
+
+section.module.parallax-4 {
+  background-image: url("https://www.cssscript.com/demo/pure-css-parallax-background-images/img/gCanyon.jpg");
+}
+
+.other-section {
+  height: 150px;
+}
+
+.cd {
+  background: repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1) 10%)
+      center fixed,
+    url("https://images.unsplash.com/photo-1632829754530-d94a588e2dde") no-repeat center fixed;
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+}
+
+.slide {
+  position: relative;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.2em;
+  color: white;
+  box-shadow: 0 0 5px 1px black;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://i.loli.net/2019/11/23/cnKl1Ykd5rZCVwm.jpg");
+  background: #111;
+}
+
+/* Error -------------------------------------------------*/
