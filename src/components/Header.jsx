@@ -72,11 +72,11 @@ const Header = () => {
             {t("home")}
           </NavLink>
           <NavLink to="/Products">{t("products")}</NavLink>
-          <NavLink to="/#">{t("commercial")}</NavLink>
-          <NavLink to="/#">{t("qc")}</NavLink>
-          <NavLink to="/#">{t("newline")}</NavLink>
-          <NavLink to="/#">{t("contactus")}</NavLink>
-          <NavLink to="/#">{t("aboutus")}</NavLink>
+          <NavLink to="/Businessunit">{t("commercial")}</NavLink>
+          <NavLink to="/QualityControl">{t("qc")}</NavLink>
+          <NavLink to="/Newline">{t("newline")}</NavLink>
+          <NavLink to="/Contactus">{t("contactus")}</NavLink>
+          <NavLink to="/Aboutus">{t("aboutus")}</NavLink>
 
           <div>
             <button

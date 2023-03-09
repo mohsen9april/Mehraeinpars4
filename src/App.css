@@ -77,6 +77,12 @@ nav {
     z-index: 1;
   }
 
+  header nav a {
+    margin: 0 1rem;
+    color: var(--textColor);
+    text-decoration: none;
+  }
+
   header .responsive_nav {
     transform: none;
   }
