@@ -11,6 +11,7 @@ import Newline from "./pages/Newline";
 import Contactus from "./pages/Contactus";
 import Aboutus from "./pages/Aboutus";
 import Error from "./pages/Error";
+import Footer from "./pages/Footer";
 
 function App() {
   return (
@@ -29,6 +30,8 @@ function App() {
           <Route path="*" element={<Error />} />
         </Routes>
       </div>
+
+      <Footer />
     </div>
   );
 }
