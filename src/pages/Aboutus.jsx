@@ -2,36 +2,97 @@ import React from "react";
 
 const Aboutus = () => {
   return (
-    <div>
-      <br />
-      <br />
-      <br />
-      <br />
-      <div class="site">
-        <div class="aboutus_container">
-          <div class="img"></div>
-          <div class="text-container">
-            <span></span>
-            <h1>Prime your environment</h1>
-            <p>
-              The people who exhibit the most self-control are not actually those who have
-              superhuman willpower, they're the ones who are tempted the least.
-            </p>
-            <a
-              href="https://www.nytimes.com/2018/12/31/smarter-living/better-habits-tips-new-year-resolutions-science.html"
-              target="_blank"
-            >
-              Learn more
-            </a>
+    <>
+      <div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <div class="site">
+          <div class="aboutus_container">
+            <div class="img"></div>
+            <div class="text-container">
+              <span></span>
+              <h1>Prime your environment</h1>
+              <p>
+                The people who exhibit the most self-control are not actually those who have
+                superhuman willpower, they're the ones who are tempted the least.
+              </p>
+              <a
+                href="https://www.nytimes.com/2018/12/31/smarter-living/better-habits-tips-new-year-resolutions-science.html"
+                target="_blank"
+              >
+                Learn more
+              </a>
+            </div>
           </div>
         </div>
+
+        <br />
+        <br />
+        <br />
+        <br />
       </div>
 
-      <br />
-      <br />
-      <br />
-      <br />
-    </div>
+      {/* Next Card  */}
+
+      <div className="paper_container">
+        <div class="paper">
+          <img
+            class="poster"
+            src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/PD0XWZZSX5.jpg"
+            alt="/"
+          />
+          <h2>Featured</h2>
+          <h1>Back to Nature</h1>
+          <hr />
+          <p>
+            Down on the West Coast where the sand meets the crashing waves and your dreams come
+            true.
+          </p>
+          <a href="/" class="btn">
+            Read More{" "}
+          </a>
+          <div class="space"></div>
+        </div>
+        <div class="paper">
+          <img
+            class="poster"
+            src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/PD0XWZZSX5.jpg"
+            alt="/"
+          />
+          <h2>Featured</h2>
+          <h1>Back to Nature</h1>
+          <hr />
+          <p>
+            Down on the West Coast where the sand meets the crashing waves and your dreams come
+            true.
+          </p>
+          <a href="/" class="btn">
+            Read More
+          </a>
+          <div class="space"></div>
+        </div>
+        <div class="paper">
+          <img
+            class="poster"
+            src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/PD0XWZZSX5.jpg"
+            alt="/"
+          />
+          <h2>Featured</h2>
+          <h1>Back to Nature</h1>
+          <hr />
+          <p>
+            Down on the West Coast where the sand meets the crashing waves and your dreams come
+            true.
+          </p>
+          <a href="/" class="btn">
+            Read More{" "}
+          </a>
+          <div class="space"></div>
+        </div>
+      </div>
+    </>
   );
 };
 

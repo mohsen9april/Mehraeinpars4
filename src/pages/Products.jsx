@@ -17,7 +17,7 @@ const Products = () => {
     <>
       <div className="products_container">
         <div className="home_title">
-          <h3>محصولات کاغذسازی مهرآیین پارس</h3>
+          <h3 style={{ textAlign: "center" }}>محصولات کاغذسازی مهرآیین پارس</h3>
         </div>
 
         <section class="main-card">
@@ -26,7 +26,7 @@ const Products = () => {
               <img class="full-img" src="./images/testliner.jpg" alt="/" />
             </div>
             <div class="content-right">
-              <h2>کاغذ تست لاینر</h2>
+              <h2 style={{ textAlign: "center" }}>کاغذ تست لاینر</h2>
               <div data-aos-duration="1000" data-aos="fade-right">
                 <p>
                   کاغذ تست‌لاینر بصورت کامل از الیاف بازیافتی تولید می‌شود ولی در فرایند تولید آن از
@@ -78,7 +78,7 @@ const Products = () => {
               <img class="full-img" src="./images/liner.jpg" alt="/" />
             </div>
             <div class="content-right">
-              <h2>کاغذ لاینر</h2>
+              <h2 style={{ textAlign: "center" }}>کاغذ لاینر</h2>
               <div data-aos-duration="1000" data-aos="fade-left">
                 <p>
                   اگر کاغذی تولید کنیم که صد درصد آن از کاغذهای بازیافتی (آخال) تولیدشده باشد به آن
@@ -128,7 +128,7 @@ const Products = () => {
               <img class="full-img" src="./images/fluting.jpg" alt="/" />
             </div>
             <div class="content-right">
-              <h2>کاغذ فلوتینگ</h2>
+              <h2 style={{ textAlign: "center" }}>کاغذ فلوتینگ</h2>
               <div data-aos-duration="1000" data-aos="fade-right">
                 <p>
                   کاغذ فلوتینگ یا کاغذ کنگره ای، به کاغذهایی ضخیم و موج دار گفته می شود که به عنوان
