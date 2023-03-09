@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useTranslation } from "react-i18next";
-import i18next from "i18next";
 import cookie from "js-cookie";
 
 const language = [
@@ -41,10 +40,6 @@ const Home = () => {
 
   return (
     <div>
-      <h1>Home page </h1>
-      <h1>Home page </h1>
-      <h1>Home page </h1>
-      <h1>Home page </h1>
       <div class="cards_wrap">
         <div class="cards_wrap__card">
           <div class="cards_wrap__card-stick">
@@ -133,9 +128,6 @@ const Home = () => {
 
       <br />
 
-      <br />
-      <br />
-
       <div data-aos-duration="1000" data-aos="slide-up" className="home_ourway">
         <h2> {t("ourresponsibility")}</h2>
         <img
@@ -154,7 +146,6 @@ const Home = () => {
       <h1>Home page </h1>
 
       {/* <!--====== CONTACT PART START ======--> */}
-
       <section id="contact" class="contact_area bg_cover pt-120 pb-130">
         <div class="container contact_container">
           <div class="row justify-content-center">
@@ -170,7 +161,6 @@ const Home = () => {
               </div>
             </div>
           </div>
-
           <form
             id="contact-form"
             action="assets/contact.php"
@@ -225,7 +215,6 @@ const Home = () => {
           </form>
         </div>
       </section>
-
       {/* <!--====== CONTACT PART ENDS ======--> */}
 
       <div data-aos="zoom-in-down" data-aos-duration="1000">

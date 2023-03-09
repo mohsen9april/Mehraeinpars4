@@ -251,7 +251,7 @@ nav {
 }
 
 /*======================================================*/
-/* CONTACT css  */
+/* CONTACT Home  */
 
 .contact_container,
 h4,
@@ -318,6 +318,220 @@ p.form-message.error.form-message.error {
   height: 170px;
   resize: none;
   padding-top: 15px;
+}
+
+/*======================================================*/
+/* Products Page  */
+
+.products_container {
+  /* background-color: aqua; */
+  width: 99%;
+}
+
+.products_container h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li {
+  color: #020202;
+}
+.products_container ul,
+li {
+  list-style-type: circle;
+}
+
+/* ------------- */
+/* Content Style */
+/* ------------- */
+
+.main-card {
+  position: relative;
+  width: 90%;
+  height: 470px;
+  margin: 20px;
+  border-radius: 10px;
+  font-family: "neuzeit-grotesk", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1em;
+  line-height: 1.5;
+  color: #303336;
+  background-color: #fff;
+  box-shadow: 0 40px 40px -20px #8fc7d544;
+  margin: auto;
+  border: 1px solid black;
+}
+
+.main-card .card-content {
+  position: relative;
+  display: flex;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  gap: 1rem;
+}
+
+.main-card .content-left {
+  position: relative;
+  width: 500px;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #f6f6f6;
+}
+
+.main-card .content-left img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  object-position: center;
+}
+
+.main-card .content-right {
+  position: relative;
+  width: calc(100% - 300px);
+  height: 100%;
+  padding-left: 35px;
+}
+
+.main-card .tag {
+  position: relative;
+  left: 100%;
+  transform: translateX(-100%);
+  width: fit-content;
+  padding: 8px 25px;
+  border-radius: 10px;
+  background-color: #005aee;
+}
+
+.main-card .tag h6 {
+  color: #fff;
+  font-size: 0.75em;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.main-card .mini-imgs {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  height: 105px;
+}
+
+.main-card .mini-imgs img {
+  width: 105px;
+  height: 105px;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+.main-card .mini-imgs img:hover {
+  opacity: 0.75;
+}
+
+.main-card .mini-imgs img:nth-child(2) {
+  margin: 0 10px;
+}
+
+/* Display this style when screen-width is lower than 992px */
+@media only screen and (max-width: 640px) {
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .main-card {
+    position: relative;
+    width: 90%;
+    height: auto;
+    margin: 80px 20px;
+  }
+
+  .main-card .card-content {
+    flex-direction: column;
+  }
+
+  .main-card .content-left {
+    width: 100%;
+    height: 300px;
+  }
+
+  .main-card .content-right {
+    width: 100%;
+    height: auto;
+    padding: 175px 0 0;
+  }
+
+  .main-card .mini-imgs {
+    position: absolute;
+    display: flex;
+    top: 0;
+    margin-top: 35px;
+    height: 105px;
+  }
+
+  .main-card p {
+    font-size: 9px;
+  }
+}
+
+/* Display this style when screen-width is lower than 500px */
+@media only screen and (max-width: 640px) {
+  .main-card {
+    margin: 120px 20px;
+  }
+
+  .main-card .card-content {
+    padding: 25px;
+  }
+
+  .main-card .content-right {
+    width: 100%;
+    height: auto;
+    padding: 115px 0 0;
+  }
+
+  .main-card .mini-imgs {
+    margin-top: 20px;
+  }
+
+  .main-card .mini-imgs img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/* Just Copy The Code Above */
+/* ======================== */
+
+/* ----------- */
+/* UI Designer */
+/* ----------- */
+
+.designer {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 400;
+  color: #46a2b9;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.designer a {
+  text-decoration: none;
+  color: #23515d;
 }
 
 /* NewLine -------------------------------------------------*/
@@ -390,6 +604,7 @@ section.module.parallax-4 {
   font-family: "Poppins", sans-serif;
   place-items: center;
   background: linear-gradient(315deg, #3e3b3b, #020202);
+  margin: auto;
 }
 .wrapper {
   display: inline-flex;
@@ -485,4 +700,83 @@ section.module.parallax-4 {
 .wrapper .youtube:hover .tooltip::before {
   background: #cd201f;
   color: #ffffff;
+}
+
+@media (max-width: 640px) {
+  .wrapper .icon {
+    position: relative;
+    background: #ffffff;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 8px;
+    width: 30px;
+    height: 30px;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+}
+
+/* ------ AboutUs -------------------------------------- */
+
+div.site {
+  background-color: #f2f2f2;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(210deg, #fb8e2a, #fdc154);
+}
+
+div.aboutus_container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+  box-shadow: 0 8px 16px rgba(black, 0.45);
+}
+
+div.img {
+  height: 300px;
+  width: 100%;
+  background: url("https://images.unsplash.com/photo-1470299568568-d4e15c4b6472?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1953&q=80");
+  background-position: center;
+  background-size: cover;
+}
+
+div.text-container {
+  margin: 60px 45px 55px;
+}
+
+@media screen and (min-width: 768px) {
+  div.aboutus_container {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  div.img {
+    height: 420px;
+    min-width: 360px;
+  }
+
+  div.text-container {
+    margin: 0 60px;
+    max-width: 660px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  div.aboutus_container {
+    max-width: 1200px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
 }
