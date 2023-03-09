@@ -132,6 +132,7 @@ const Home = () => {
       </div>
 
       <br />
+
       <br />
       <br />
 
@@ -151,6 +152,82 @@ const Home = () => {
       </section>
       <h1>Home page </h1>
       <h1>Home page </h1>
+
+      {/* <!--====== CONTACT PART START ======--> */}
+
+      <section id="contact" class="contact_area bg_cover pt-120 pb-130">
+        <div class="container contact_container">
+          <div class="row justify-content-center">
+            <div class="col-lg-6">
+              <div class="section_title section_title_2 text-center pb-25">
+                <h4 class="title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">
+                  {t("contactus")}
+                </h4>
+                <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                  tempor invidunt labor dolore.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <form
+            id="contact-form"
+            action="assets/contact.php"
+            method="post"
+            class="wow fadeInUp"
+            data-wow-duration="1.3s"
+            data-wow-delay="0.4s"
+          >
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="single_form">
+                  <input type="text" placeholder="Name" name="name" id="name" required />
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="single_form">
+                  <input type="email" placeholder="Email" name="email" id="email" required />
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="single_form">
+                  <input
+                    type="text"
+                    placeholder="Phone Number"
+                    name="number"
+                    id="number"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="single_form">
+                  <input type="text" placeholder="Subject" name="subject" id="subject" required />
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="single_form">
+                  <textarea placeholder="Message" name="message" id="message" required></textarea>
+                </div>
+              </div>
+
+              <p class="form-message"></p>
+
+              <div class="col-lg-12">
+                <div class="single_form text-center">
+                  <button class="main-btn" type="submit">
+                    SUBMIT
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      {/* <!--====== CONTACT PART ENDS ======--> */}
+
       <div data-aos="zoom-in-down" data-aos-duration="1000">
         <img
           style={{ display: "flex", margin: "auto", width: "80%" }}

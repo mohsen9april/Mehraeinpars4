@@ -12,6 +12,44 @@
   --textColor: #eee;
 }
 
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+ul,
+ol {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0px;
+}
+
 /* --------------------------- */
 /* ----- Navigation Bar ------ */
 /* --------------------------- */
@@ -210,6 +248,76 @@ nav {
     /* object-fit: cover; */
     resize: both;
   }
+}
+
+/*======================================================*/
+/* CONTACT css  */
+
+.contact_container,
+h4,
+p {
+  color: var(--textColor);
+}
+
+.contact_area {
+  position: relative;
+  z-index: 5;
+  background-image: url(https://assets.codepen.io/1920639/contact_bg.jpg);
+  padding-top: 1rem;
+}
+
+.contact_area::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(43, 42, 61, 0.9);
+  z-index: -1;
+}
+
+p.form-message.success,
+p.form-message.error {
+  font-size: 16px;
+  color: #2b2a3d;
+  background: #f9f9f9;
+  padding: 10px 15px;
+  margin-top: 30px;
+  background-color: #fff;
+  margin-left: 15px;
+}
+
+p.form-message.success.form-message.error,
+p.form-message.error.form-message.error {
+  color: #f00;
+}
+
+.single_form {
+  margin-top: 30px;
+}
+
+.single_form input,
+.single_form textarea {
+  width: 100%;
+  height: 55px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  padding: 0 25px;
+  font-size: 16px;
+  color: #fff;
+  background: none;
+  transition: all 0.3s ease-out 0s;
+}
+
+.single_form input:focus,
+.single_form textarea:focus {
+  border-color: #fff;
+}
+
+.single_form textarea {
+  height: 170px;
+  resize: none;
+  padding-top: 15px;
 }
 
 /* NewLine -------------------------------------------------*/
