@@ -532,11 +532,11 @@ li {
 
 section.module.parallax div.container {
   max-width: 960px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 section.module.parallax {
-  height: 600px;
+  height: 700px;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -544,19 +544,50 @@ section.module.parallax {
 }
 
 section.module.parallax-1 {
-  background-image: url("https://www.cssscript.com/demo/pure-css-parallax-background-images/img/gCanyon.jpg");
+  background-image: url("https://s2.uupload.ir/files/photo-2022-05-21-10-23-49_1xl8.jpg");
 }
 
 section.module.parallax-2 {
-  background-image: url("https://www.cssscript.com/demo/pure-css-parallax-background-images/img/rMountains.jpg");
+  background-image: url("https://s2.uupload.ir/files/photo-2022-05-25-11-20-13_javf.jpg");
 }
 
 section.module.parallax-3 {
-  background-image: url("https://www.cssscript.com/demo/pure-css-parallax-background-images/img/niagra.jpg");
+  background-image: url("https://s2.uupload.ir/files/photo-2022-05-29-10-15-24_bj4r.jpg");
 }
 
 section.module.parallax-4 {
-  background-image: url("https://www.cssscript.com/demo/pure-css-parallax-background-images/img/gCanyon.jpg");
+  background-image: url("https://s2.uupload.ir/files/photo-2022-05-30-12-25-57_81d3.jpg");
+}
+
+section.module.parallax-5 {
+  background-image: url("https://s2.uupload.ir/files/photo-2022-06-05-11-32-44_1ey.jpg");
+}
+
+section.module.parallax-6 {
+  background-image: url("https://s2.uupload.ir/files/photo-2022-06-19-15-58-22_fgi.jpg");
+}
+
+section.module.parallax-7 {
+  background-image: url("https://s2.uupload.ir/files/photo-2022-06-19-15-58-58_3wnm.jpg");
+}
+
+section.module.parallax-8 {
+  background-image: url("https://s2.uupload.ir/files/photo-2022-06-27-12-07-43_jo3y.jpg");
+}
+section.module.parallax-9 {
+  background-image: url("https://s2.uupload.ir/files/photo-2022-06-27-12-07-48_0k8m.jpg");
+}
+
+section.module.parallax-10 {
+  background-image: url("https://s2.uupload.ir/files/photo-2022-07-04-10-44-36_ke86.jpg");
+}
+
+section.module.parallax-11 {
+  background-image: url("https://s2.uupload.ir/files/photo-2022-08-17-09-43-08_2_bsh5.jpg");
+}
+
+section.module.parallax-12 {
+  background-image: url("https://s2.uupload.ir/files/photo-2022-08-17-09-43-11_rtpp.jpg");
 }
 
 .other-section {
@@ -566,7 +597,9 @@ section.module.parallax-4 {
 .cd {
   background: repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1) 10%)
       center fixed,
-    url("https://images.unsplash.com/photo-1632829754530-d94a588e2dde") no-repeat center fixed;
+    /* url("https://images.unsplash.com/photo-1632829754530-d94a588e2dde") no-repeat center fixed; */
+      url("https://s2.uupload.ir/files/a702e208-82ca-4d44-92ee-b6db83734236_tg1k.jpg") no-repeat
+      center fixed;
   background-size: cover;
   height: 600px;
   width: 100%;
@@ -574,17 +607,58 @@ section.module.parallax-4 {
 
 .slide {
   position: relative;
-  height: 50vh;
+  height: 30vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  letter-spacing: 0.2em;
+  /* letter-spacing: 0.2em; */
   color: white;
   box-shadow: 0 0 5px 1px black;
   background-size: cover;
   background-position: center;
-  background-image: url("https://i.loli.net/2019/11/23/cnKl1Ykd5rZCVwm.jpg");
+  /* background-image: url("https://i.loli.net/2019/11/23/cnKl1Ykd5rZCVwm.jpg"); */
   background: #111;
+}
+
+.Newline_divider {
+  margin-top: 1rem;
+  /* background-color: #005aee; */
+  background-image: linear-gradient(210deg, #fb8e2a, #fdc154);
+}
+
+.Newline_divider img {
+  padding: 2rem;
+  display: flex;
+  margin: auto;
+  height: 30vh;
+}
+
+@media only screen and (max-width: 640px) {
+  section.module.parallax div.container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  section.module.parallax {
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    /* width: 100%;
+    max-width: 400px;
+    min-height: 30vh;
+    height: auto; */
+    /* max-inline-size: 100%;
+    block-size: auto; */
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+    /* background-size: cover; */
+    /* object-fit: cover; */
+  }
 }
 
 /* Error -------------------------------------------------*/
