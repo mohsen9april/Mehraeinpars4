@@ -144,7 +144,9 @@ nav {
 .Home_Products_container {
   width: 100%;
   min-height: 60vh;
-  background-color: #f0f0f0;
+  /* background-color: #f0f0f0; */
+  background-image: linear-gradient(210deg, #fb8e2a, #fdc154);
+
   font-family: "Poppins", sans-serif;
   display: flex;
   justify-content: center;

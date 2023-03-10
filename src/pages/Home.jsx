@@ -43,14 +43,7 @@ const Home = () => {
       <div class="cards_wrap">
         <div class="cards_wrap__card">
           <div class="cards_wrap__card-stick">
-            <h2>
-              OVERLAPPING CARDS CSS ONLY
-              <span>
-                Inspired by Locomotive work
-                <br />
-                <a href="https://k72.ca/">K72</a>
-              </span>
-            </h2>
+            <h2 style={{ color: "white" }}>{t("app_title")}</h2>
           </div>
         </div>
         <div class="cards_wrap__card">
@@ -86,8 +79,8 @@ const Home = () => {
       <br />
       <br />
 
-      <h2> {t("mehraeinParsproducts")}</h2>
-      <div class="Home_Products_container">
+      <h2 style={{ textAlign: "center" }}> {t("mehraeinParsproducts")}</h2>
+      {/* <div class="Home_Products_container">
         <div class="box">
           <div class="imgBox">
             <img src="./images/testliner.jpg" alt="/" />
@@ -124,6 +117,54 @@ const Home = () => {
             </h2>
           </div>
         </div>
+      </div> */}
+
+      <div
+        style={{ background: "linear-gradient(210deg, #fb8e2a, #fdc154)" }}
+        className="paper_container"
+      >
+        <div class="paper">
+          <img class="poster" src="./images/testliner.jpg" alt="/" />
+          <h2>Featured</h2>
+          <h1>Back to Nature</h1>
+          <hr />
+          <p>
+            Down on the West Coast where the sand meets the crashing waves and your dreams come
+            true.
+          </p>
+          <a href="/" class="btn">
+            Read More{" "}
+          </a>
+          <div class="space"></div>
+        </div>
+        <div class="paper">
+          <img class="poster" src="./images/liner.jpg" alt="/" />
+          <h2>Featured</h2>
+          <h1>Back to Nature</h1>
+          <hr />
+          <p>
+            Down on the West Coast where the sand meets the crashing waves and your dreams come
+            true.
+          </p>
+          <a href="/" class="btn">
+            Read More
+          </a>
+          <div class="space"></div>
+        </div>
+        <div class="paper">
+          <img class="poster" src="./images/fluting.jpg" alt="/" />
+          <h2>Featured</h2>
+          <h1>Back to Nature</h1>
+          <hr />
+          <p>
+            Down on the West Coast where the sand meets the crashing waves and your dreams come
+            true.
+          </p>
+          <a href="/" class="btn">
+            Read More{" "}
+          </a>
+          <div class="space"></div>
+        </div>
       </div>
 
       <br />
@@ -137,13 +178,28 @@ const Home = () => {
         />
       </div>
 
-      <h1>Home page </h1>
-      <h1>Home page </h1>
       <section class="slide" id="slide2">
         <h1>Set to full page for best experience.</h1>
       </section>
-      <h1>Home page </h1>
-      <h1>Home page </h1>
+
+      <br />
+
+      <div class="site">
+        <div class="aboutus_container">
+          <div class="img"></div>
+          <div class="text-container">
+            <span></span>
+            <h1>کاغذسازی مهرآیین پارس</h1>
+            <p>
+              The people who exhibit the most self-control are not actually those who have
+              superhuman willpower, they're the ones who are tempted the least.
+            </p>
+            <a href="/" target="_blank">
+              Learn more
+            </a>
+          </div>
+        </div>
+      </div>
 
       {/* <!--====== CONTACT PART START ======--> */}
       <section id="contact" class="contact_area bg_cover pt-120 pb-130">
@@ -154,10 +210,10 @@ const Home = () => {
                 <h4 class="title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">
                   {t("contactus")}
                 </h4>
-                <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">
+                {/* <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">
                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
                   tempor invidunt labor dolore.
-                </p>
+                </p> */}
               </div>
             </div>
           </div>
@@ -216,6 +272,16 @@ const Home = () => {
         </div>
       </section>
       {/* <!--====== CONTACT PART ENDS ======--> */}
+
+      <br />
+
+      <section class="slide" id="slide2">
+        <h1>کاغذسازی مهرآیین پارس </h1>
+      </section>
+
+      <div className="Newline_divider">
+        <img src="./images/Logo1.png" />
+      </div>
 
       <div data-aos="zoom-in-down" data-aos-duration="1000">
         <img

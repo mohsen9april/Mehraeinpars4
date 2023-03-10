@@ -1,13 +1,11 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 const Aboutus = () => {
   return (
     <>
       <div>
         <br />
-        <br />
-        <br />
-        <br />
+
         <div class="site">
           <div class="aboutus_container">
             <div class="img"></div>
@@ -18,10 +16,7 @@ const Aboutus = () => {
                 The people who exhibit the most self-control are not actually those who have
                 superhuman willpower, they're the ones who are tempted the least.
               </p>
-              <a
-                href="https://www.nytimes.com/2018/12/31/smarter-living/better-habits-tips-new-year-resolutions-science.html"
-                target="_blank"
-              >
+              <a href="/" target="_blank">
                 Learn more
               </a>
             </div>
@@ -35,7 +30,6 @@ const Aboutus = () => {
       </div>
 
       {/* Next Card  */}
-
       <div className="paper_container">
         <div class="paper">
           <img
