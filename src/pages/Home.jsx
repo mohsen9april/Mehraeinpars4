@@ -40,6 +40,13 @@ const Home = () => {
 
   return (
     <div>
+      <h2>Horizontal Scroll </h2>
+      <h2>Horizontal Scroll </h2>
+      <h2>Horizontal Scroll </h2>
+      <h2>Horizontal Scroll </h2>
+      <h2>Horizontal Scroll </h2>
+      <h2>Horizontal Scroll </h2>
+      <h2>Horizontal Scroll </h2>
       <div class="cards_wrap">
         <div class="cards_wrap__card">
           <div class="cards_wrap__card-stick">
@@ -48,30 +55,22 @@ const Home = () => {
         </div>
         <div class="cards_wrap__card">
           <div class="cards_wrap__card-stick color2">
-            <h2>
-              TEST TITLE - 2<span>第二張測試卡片</span>
-            </h2>
+            <h2 style={{ color: "white" }}>{t("app_title")}</h2>
           </div>
         </div>
         <div class="cards_wrap__card">
           <div class="cards_wrap__card-stick color3">
-            <h2>
-              TEST TITLE - 3<span>第三張測試卡片</span>
-            </h2>
+            <h2 style={{ color: "white" }}>{t("app_title")}</h2>
           </div>
         </div>
         <div class="cards_wrap__card">
           <div class="cards_wrap__card-stick color4">
-            <h2>
-              TEST TITLE - 4<span>第四張測試卡片</span>
-            </h2>
+            <h2 style={{ color: "white" }}>{t("app_title")}</h2>
           </div>
         </div>
         <div class="cards_wrap__card">
           <div class="cards_wrap__card-stick last">
-            <h2>
-              TEST TITLE - Last<span>最後一張測試卡片</span>
-            </h2>
+            <h2 style={{ color: "white" }}>{t("app_title")}</h2>
           </div>
         </div>
       </div>
@@ -125,43 +124,34 @@ const Home = () => {
       >
         <div class="paper">
           <img class="poster" src="./images/testliner.jpg" alt="/" />
-          <h2>Featured</h2>
-          <h1>Back to Nature</h1>
+          {/* <h2>Featured</h2> */}
+          <h1>{t("testliner")} </h1>
           <hr />
-          <p>
-            Down on the West Coast where the sand meets the crashing waves and your dreams come
-            true.
-          </p>
-          <a href="/" class="btn">
-            Read More{" "}
+          <p>{t("testlinertext")}</p>
+          <a href="/products" class="btn">
+            Read More
           </a>
           <div class="space"></div>
         </div>
         <div class="paper">
           <img class="poster" src="./images/liner.jpg" alt="/" />
-          <h2>Featured</h2>
-          <h1>Back to Nature</h1>
+          {/* <h2>Featured</h2> */}
+          <h1> {t("liner")}</h1>
           <hr />
-          <p>
-            Down on the West Coast where the sand meets the crashing waves and your dreams come
-            true.
-          </p>
-          <a href="/" class="btn">
+          <p>{t("linertext")}</p>
+          <a href="/products" class="btn">
             Read More
           </a>
           <div class="space"></div>
         </div>
         <div class="paper">
           <img class="poster" src="./images/fluting.jpg" alt="/" />
-          <h2>Featured</h2>
-          <h1>Back to Nature</h1>
+          {/* <h2>Featured</h2> */}
+          <h1> {t("fluting")}</h1>
           <hr />
-          <p>
-            Down on the West Coast where the sand meets the crashing waves and your dreams come
-            true.
-          </p>
-          <a href="/" class="btn">
-            Read More{" "}
+          <p>{t("flutingtext")}</p>
+          <a href="/products" class="btn">
+            Read More
           </a>
           <div class="space"></div>
         </div>
@@ -170,7 +160,7 @@ const Home = () => {
       <br />
 
       <div data-aos-duration="1000" data-aos="slide-up" className="home_ourway">
-        <h2> {t("ourresponsibility")}</h2>
+        <h2 style={{ textAlign: "center" }}> {t("ourresponsibility")}</h2>
         <img
           style={{ display: "flex", margin: "auto", width: "80%" }}
           src="./images/ourway.png"
@@ -190,11 +180,8 @@ const Home = () => {
           <div class="text-container">
             <span></span>
             <h1>کاغذسازی مهرآیین پارس</h1>
-            <p>
-              The people who exhibit the most self-control are not actually those who have
-              superhuman willpower, they're the ones who are tempted the least.
-            </p>
-            <a href="/" target="_blank">
+            <p>{t("description")}</p>
+            <a href="/aboutus" target="_blank" class="btn">
               Learn more
             </a>
           </div>
