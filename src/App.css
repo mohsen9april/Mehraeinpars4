@@ -139,12 +139,9 @@ nav {
 
 /* Home--------------------------------------------------------- */
 
-/* SCSS */
-
 .Home_Products_container {
   width: 100%;
   min-height: 60vh;
-  /* background-color: #f0f0f0; */
   background-image: linear-gradient(210deg, #fb8e2a, #fdc154);
 
   font-family: "Poppins", sans-serif;
@@ -250,7 +247,121 @@ nav {
   }
 }
 
-/*======================================================*/
+/* NextCards Home  */
+.paper_container_Home {
+  background-image: linear-gradient(-45deg, #eef0f3 0%, #f6f5f3 100%);
+  font-size: 62.5%;
+  user-select: none;
+  transition: 0.3s ease;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.paper_Home {
+  margin: 6vh auto;
+  min-width: 20vw;
+  max-width: 60vh;
+  min-height: 20vh;
+  border-radius: 4px;
+  box-shadow: 0 15px 35px rgba(50, 50, 90, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+  transition: 0.6s ease;
+  background: white;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+.paper_Home:hover {
+  box-shadow: 0 18px 35px rgba(50, 50, 90, 0.1), 0 8px 15px rgba(0, 0, 0, 0.07);
+  transform: translateY(-1px);
+}
+
+.paper_Home img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.poster_Home {
+  border-radius: 4px 4px 0 0;
+  margin-bottom: 1vh;
+}
+
+.paper_Home h1 {
+  font-size: 2.6rem;
+  /* letter-spacing: 1px; */
+  margin: 1vh 2vw;
+}
+
+.paper_Home h2 {
+  font-size: 0.4rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.paper_Home hr {
+  width: 40%;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  border: 0;
+  border-bottom: 1px solid #000000;
+}
+
+.paper_Home p {
+  margin: 1vh 4vw;
+  text-align: center;
+  padding-bottom: 1vh;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1.25rem;
+}
+
+.paper_Home .btn,
+.paper_Home a.btn {
+  display: inline-block;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 20px;
+  border-radius: 4px;
+  padding: 1vh 2vh;
+  letter-spacing: 0.02rem;
+  background: #664ef7;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+  box-shadow: 0 0px 0px rgba(48, 51, 54, 0.1), 0 0px 0px rgba(0, 0, 0, 0);
+}
+
+.paper_Home .btn,
+.paper_Home a.btn:hover {
+  background: #7c66ff;
+  box-shadow: 0 7px 14px rgba(48, 51, 54, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+  transform: translateY(-1px);
+}
+
+.paper_Home .btn,
+.paper_Home a.btn:active {
+  box-shadow: 0 4px 6px rgba(48, 51, 54, 0.1), 0 1px 3px rgba(0, 0, 0, 0.12);
+  transform: translateY(1px);
+}
+
+.paper_Home .space {
+  height: 4vh;
+}
+
+/* Site Home  */
+
+.site .aboutus_container .img_Home {
+  height: 500px;
+  width: 100%;
+  background: url("https://s2.uupload.ir/files/a702e208-82ca-4d44-92ee-b6db83734236_tg1k.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
 /* CONTACT Home  */
 
 .contact_container,
@@ -318,6 +429,22 @@ p.form-message.error.form-message.error {
   height: 170px;
   resize: none;
   padding-top: 15px;
+}
+
+.main-btn_submit {
+  display: inline-block;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 20px;
+  border-radius: 4px;
+  padding: 1vh 2vh;
+  letter-spacing: 0.02rem;
+  background: #664ef7;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+  box-shadow: 0 0px 0px rgba(48, 51, 54, 0.1), 0 0px 0px rgba(0, 0, 0, 0);
 }
 
 /*======================================================*/

@@ -50,19 +50,19 @@ const Products = () => {
               <div class="mini-imgs">
                 <img
                   class="mini-img"
-                  src="https://images.unsplash.com/photo-1593346279196-b971a8e46966?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1974&q=80"
+                  src="https://s2.uupload.ir/files/images_53hi.jpeg"
                   alt="/"
                   onclick="changeImg(1)"
                 />
                 <img
                   class="mini-img"
-                  src="https://images.unsplash.com/photo-1594884592479-1f5bad0b696d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2002&q=80"
+                  src="https://s2.uupload.ir/files/images-3_ivw.jpeg"
                   alt="/"
                   onclick="changeImg(2)"
                 />
                 <img
                   class="mini-img"
-                  src="https://images.unsplash.com/photo-1592431454781-ec4870757ce9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+                  src="https://s2.uupload.ir/files/images-2_is9a.jpeg"
                   alt="/"
                   onclick="changeImg(3)"
                 />
@@ -100,19 +100,19 @@ const Products = () => {
               <div class="mini-imgs">
                 <img
                   class="mini-img"
-                  src="https://images.unsplash.com/photo-1593346279196-b971a8e46966?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1974&q=80"
+                  src="https://s2.uupload.ir/files/images-2_mds9.jpeg"
                   alt="/"
                   onclick="changeImg(1)"
                 />
                 <img
                   class="mini-img"
-                  src="https://images.unsplash.com/photo-1594884592479-1f5bad0b696d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2002&q=80"
+                  src="https://s2.uupload.ir/files/images-1_j7po.jpeg"
                   alt="/"
                   onclick="changeImg(2)"
                 />
                 <img
                   class="mini-img"
-                  src="https://images.unsplash.com/photo-1592431454781-ec4870757ce9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+                  src="https://s2.uupload.ir/files/images_b98z.jpeg"
                   alt="/"
                   onclick="changeImg(3)"
                 />
@@ -149,19 +149,19 @@ const Products = () => {
               <div class="mini-imgs">
                 <img
                   class="mini-img"
-                  src="https://images.unsplash.com/photo-1593346279196-b971a8e46966?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1974&q=80"
+                  src="https://s2.uupload.ir/files/images_2fp4.jpeg"
                   alt="/"
                   onclick="changeImg(1)"
                 />
                 <img
                   class="mini-img"
-                  src="https://images.unsplash.com/photo-1594884592479-1f5bad0b696d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2002&q=80"
+                  src="https://s2.uupload.ir/files/images-1_rgjw.jpeg"
                   alt="/"
                   onclick="changeImg(2)"
                 />
                 <img
                   class="mini-img"
-                  src="https://images.unsplash.com/photo-1592431454781-ec4870757ce9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+                  src="https://s2.uupload.ir/files/images-2_m7mq.jpeg"
                   alt="/"
                   onclick="changeImg(3)"
                 />

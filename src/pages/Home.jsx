@@ -40,13 +40,6 @@ const Home = () => {
 
   return (
     <div>
-      <h2>Horizontal Scroll </h2>
-      <h2>Horizontal Scroll </h2>
-      <h2>Horizontal Scroll </h2>
-      <h2>Horizontal Scroll </h2>
-      <h2>Horizontal Scroll </h2>
-      <h2>Horizontal Scroll </h2>
-      <h2>Horizontal Scroll </h2>
       <div class="cards_wrap">
         <div class="cards_wrap__card">
           <div class="cards_wrap__card-stick">
@@ -79,51 +72,14 @@ const Home = () => {
       <br />
 
       <h2 style={{ textAlign: "center" }}> {t("mehraeinParsproducts")}</h2>
-      {/* <div class="Home_Products_container">
-        <div class="box">
-          <div class="imgBox">
-            <img src="./images/testliner.jpg" alt="/" />
-          </div>
-          <div class="content">
-            <h2>
-              {t("testliner")}
-              <br />
-              <span>Graphic Designer</span>
-            </h2>
-          </div>
-        </div>
-        <div class="box">
-          <div class="imgBox">
-            <img src="./images/liner.jpg" alt="/" />
-          </div>
-          <div class="content">
-            <h2>
-              {t("liner")}
-              <br />
-              <span>Graphic Designer</span>
-            </h2>
-          </div>
-        </div>
-        <div class="box">
-          <div class="imgBox">
-            <img src="./images/fluting.jpg" alt="/" />
-          </div>
-          <div class="content">
-            <h2>
-              {t("fluting")}
-              <br />
-              <span>Graphic Designer</span>
-            </h2>
-          </div>
-        </div>
-      </div> */}
 
+      {/* Next Card Home */}
       <div
         style={{ background: "linear-gradient(210deg, #fb8e2a, #fdc154)" }}
-        className="paper_container"
+        className="paper_container_Home"
       >
-        <div class="paper">
-          <img class="poster" src="./images/testliner.jpg" alt="/" />
+        <div class="paper_Home">
+          <img class="poster_Home" src="./images/testliner.jpg" alt="/" />
           {/* <h2>Featured</h2> */}
           <h1>{t("testliner")} </h1>
           <hr />
@@ -133,8 +89,8 @@ const Home = () => {
           </a>
           <div class="space"></div>
         </div>
-        <div class="paper">
-          <img class="poster" src="./images/liner.jpg" alt="/" />
+        <div class="paper_Home">
+          <img class="poster_Home" src="./images/liner.jpg" alt="/" />
           {/* <h2>Featured</h2> */}
           <h1> {t("liner")}</h1>
           <hr />
@@ -144,8 +100,8 @@ const Home = () => {
           </a>
           <div class="space"></div>
         </div>
-        <div class="paper">
-          <img class="poster" src="./images/fluting.jpg" alt="/" />
+        <div class="paper_Home">
+          <img class="poster_Home" src="./images/fluting.jpg" alt="/" />
           {/* <h2>Featured</h2> */}
           <h1> {t("fluting")}</h1>
           <hr />
@@ -168,19 +124,23 @@ const Home = () => {
         />
       </div>
 
+      <br />
+
       <section class="slide" id="slide2">
-        <h1>Set to full page for best experience.</h1>
+        <h1>MEHRAEINPARS PAPER MILL COMPANY</h1>
       </section>
 
       <br />
 
       <div class="site">
         <div class="aboutus_container">
-          <div class="img"></div>
+          <div class="img_Home"></div>
           <div class="text-container">
             <span></span>
-            <h1>کاغذسازی مهرآیین پارس</h1>
+            <h1 style={{ fontSize: "2.2rem", textAlign: "center" }}>کاغذسازی مهرآیین پارس</h1>
+            <br />
             <p>{t("description")}</p>
+            <br />
             <a href="/aboutus" target="_blank" class="btn">
               Learn more
             </a>
@@ -188,13 +148,20 @@ const Home = () => {
         </div>
       </div>
 
+      <br />
+
       {/* <!--====== CONTACT PART START ======--> */}
       <section id="contact" class="contact_area bg_cover pt-120 pb-130">
         <div class="container contact_container">
           <div class="row justify-content-center">
             <div class="col-lg-6">
               <div class="section_title section_title_2 text-center pb-25">
-                <h4 class="title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">
+                <h4
+                  style={{ color: "white" }}
+                  class="title wow fadeInUp"
+                  data-wow-duration="1.3s"
+                  data-wow-delay="0.2s"
+                >
                   {t("contactus")}
                 </h4>
                 {/* <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">
@@ -249,7 +216,7 @@ const Home = () => {
 
               <div class="col-lg-12">
                 <div class="single_form text-center">
-                  <button class="main-btn" type="submit">
+                  <button class="main-btn_submit" type="submit">
                     SUBMIT
                   </button>
                 </div>
