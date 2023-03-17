@@ -1047,6 +1047,68 @@ fieldset {
 
 /* ------ AboutUs -------------------------------------- */
 
+.main-section {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-image: linear-gradient(210deg, #fb8e2a, #fdc154);
+}
+.cardleft {
+  width: 500px;
+  height: 60vh;
+  /* border: 1px solid #ccc; */
+  border-radius: 8px;
+  /* background: #fff; */
+  box-sizing: border-box;
+  margin: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.cardleft img {
+  display: flex;
+  margin: auto;
+  max-width: 480px;
+  height: auto;
+  border-radius: 2rem;
+}
+.cardright {
+  width: 640px;
+  height: 60vh;
+  /* border: 1px solid #ccc; */
+  border-radius: 8px;
+  /* background: #fff; */
+  box-sizing: border-box;
+  margin: 16px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutus_container {
+  background-image: linear-gradient(210deg, #fb8e2a, #fdc154);
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.aboutus_container .left {
+  flex: 1;
+  background-color: #005aee;
+}
+
+.aboutus_container .left img {
+  display: flex;
+  margin: auto;
+  width: 50%;
+}
+.aboutus_container .right {
+  flex: 1;
+  background-color: #23515d;
+}
+
 div.site {
   background-color: #f2f2f2;
   height: 100vh;
@@ -1069,7 +1131,7 @@ div.aboutus_container {
 div.img {
   height: 300px;
   width: 100%;
-  background: url("https://images.unsplash.com/photo-1470299568568-d4e15c4b6472?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1953&q=80");
+  background-image: url("https://s2.uupload.ir/files/a702e208-82ca-4d44-92ee-b6db83734236_tg1k.jpg");
   background-position: center;
   background-size: cover;
 }

@@ -132,7 +132,7 @@ const Home = () => {
 
       <br />
 
-      <div class="site">
+      {/* <div class="site">
         <div class="aboutus_container">
           <div class="img_Home"></div>
           <div class="text-container">
@@ -142,6 +142,24 @@ const Home = () => {
             <p>{t("description")}</p>
             <br />
             <a href="/aboutus" target="_blank" class="btn">
+              Learn more
+            </a>
+          </div>
+        </div>
+      </div> */}
+
+      <div class="site">
+        <div class="aboutus_container">
+          <div class="img"></div>
+          <br />
+          <div class="text-container">
+            <span></span>
+            <h1>Prime your environment</h1>
+            <p>
+              The people who exhibit the most self-control are not actually those who have
+              superhuman willpower, they're the ones who are tempted the least.
+            </p>
+            <a href="/" target="_blank">
               Learn more
             </a>
           </div>

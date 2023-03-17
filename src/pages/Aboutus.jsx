@@ -1,12 +1,27 @@
 import React, { Fragment } from "react";
+import { useTranslation } from "react-i18next";
 
 const Aboutus = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <div>
         <br />
 
-        <div class="site">
+        <div>
+          <section class="main-section">
+            <div class="cardleft">
+              <img src="./images/banner.png" alt="/" />
+            </div>
+            <div class="cardright">
+              <h2> {t("aboutus")}</h2>
+              <p class="text-blk subHeading">{t("aboutustext")}</p>
+            </div>
+          </section>
+        </div>
+
+        {/* <div class="site">
           <div class="aboutus_container">
             <div class="img"></div>
             <div class="text-container">
@@ -21,16 +36,13 @@ const Aboutus = () => {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <br />
-        <br />
-        <br />
         <br />
       </div>
 
       {/* Next Card  */}
-      <div className="paper_container">
+      {/* <div className="paper_container">
         <div class="paper">
           <img
             class="poster"
@@ -85,7 +97,7 @@ const Aboutus = () => {
           </a>
           <div class="space"></div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };
