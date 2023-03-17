@@ -10,6 +10,7 @@ import "bootstrap/dist/js/bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "flag-icon-css/css/flag-icon.min.css";
 import { BrowserRouter } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
 
 i18n
   .use(initReactI18next)
@@ -38,6 +39,7 @@ root.render(
   <Suspense fallback={loading}>
     <StrictMode>
       <BrowserRouter>
+        <ScrollToTop />
         <App />
       </BrowserRouter>
     </StrictMode>
