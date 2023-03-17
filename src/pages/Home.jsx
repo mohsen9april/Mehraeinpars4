@@ -166,8 +166,6 @@ const Home = () => {
         </div>
       </div>
 
-      <br />
-
       {/* <!--====== CONTACT PART START ======--> */}
       <section id="contact" class="contact_area bg_cover pt-120 pb-130">
         <div class="container contact_container">
@@ -246,6 +244,12 @@ const Home = () => {
       {/* <!--====== CONTACT PART ENDS ======--> */}
 
       <br />
+
+      <div>
+        <div class="other-section"></div>
+        <div style={{ height: "50vh" }} class="cd"></div>
+        <div class="other-section"></div>
+      </div>
 
       <section class="slide" id="slide2">
         <h1>کاغذسازی مهرآیین پارس </h1>
