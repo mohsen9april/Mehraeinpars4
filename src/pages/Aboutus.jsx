@@ -7,9 +7,6 @@ const Aboutus = () => {
   return (
     <>
       <div>
-        <br />
-        <br />
-
         <div>
           <br />
           <section class="main-section">

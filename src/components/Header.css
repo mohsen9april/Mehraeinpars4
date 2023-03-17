@@ -1,0 +1,220 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  padding: 0 2rem;
+  color: var(--textColor);
+  position: fixed;
+  width: 100%;
+  z-index: 6;
+  background-color: white;
+}
+
+nav a {
+  margin: 0 1rem;
+  color: black;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--secondaryColor);
+}
+
+.header .nav-btn {
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: black;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.8rem;
+}
+
+.header div,
+nav {
+  display: flex;
+  align-items: center;
+}
+
+/* @media only screen and (max-width: 1024px) { */
+@media (max-width: 640px) {
+  .header .nav-btn {
+    position: absolute;
+    right: 16px;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .header nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* align-items: center; */
+    /* justify-content: center; */
+    gap: 1.5rem;
+    background-color: var(--mainColor);
+    transition: 0.7s;
+    transform: translateX(100vh);
+    z-index: 2;
+    padding-top: 7rem;
+  }
+
+  .header nav a {
+    margin: 0 1rem;
+    color: var(--textColor);
+    text-decoration: none;
+    top: 10rem;
+  }
+
+  nav a:hover {
+    color: var(--secondaryColor);
+  }
+
+  .header .responsive_nav {
+    transform: none;
+  }
+
+  nav .nav-close-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+
+  nav a {
+    font-size: 1rem;
+  }
+}
+
+/* navicon */
+
+.navicon_container {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  place-items: center;
+  margin: auto;
+}
+.navwrapper {
+  display: inline-flex;
+  list-style: none;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  padding-right: 1rem;
+  display: flex;
+  margin: auto;
+}
+
+.navwrapper .navicon {
+  position: relative;
+  background: #ffffff;
+  border-radius: 50%;
+  margin: 5px;
+  width: 40px;
+  height: 38px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.navwrapper .navtooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.navwrapper .navtooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: 3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.navwrapper .navicon:hover .navtooltip {
+  top: 55px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.navwrapper .navicon:hover span,
+.navwrapper .navicon:hover .navtooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.navwrapper .facebook:hover,
+.navwrapper .facebook:hover .navtooltip,
+.navwrapper .facebook:hover .navtooltip::before {
+  background: #1877f2;
+  color: #ffffff;
+}
+
+.navwrapper .twitter:hover,
+.navwrapper .twitter:hover .navtooltip,
+.navwrapper .twitter:hover .navtooltip::before {
+  background: #1da1f2;
+  color: #ffffff;
+}
+
+.navwrapper .instagram:hover,
+.navwrapper .instagram:hover .navtooltip,
+.navwrapper .instagram:hover .navtooltip::before {
+  background: #e4405f;
+  color: #ffffff;
+}
+
+.navwrapper .github:hover,
+.navwrapper .github:hover .navtooltip,
+.navwrapper .github:hover .navtooltip::before {
+  background: #333333;
+  color: #ffffff;
+}
+
+.navwrapper .youtube:hover,
+.navwrapper .youtube:hover .navtooltip,
+.navwrapper .youtube:hover .navtooltip::before {
+  background: #cd201f;
+  color: #ffffff;
+}
+
+@media (max-width: 640px) {
+  .navwrapper {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    width: 200px;
+    display: flex;
+    background-color: var(--mainColor);
+  }
+  .navwrapper .navicon {
+    color: black;
+    width: 40px;
+  }
+}

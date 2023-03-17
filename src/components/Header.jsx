@@ -5,6 +5,7 @@ import cookie from "js-cookie";
 import { NavLink } from "react-router-dom";
 import { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import "./Header.css";
 
 const language = [
   {
@@ -48,6 +49,19 @@ const Header = () => {
     document.title = t("app_title");
   }, [currentLanguage, t]);
 
+  useEffect(() => {
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "0";
+      } else {
+        document.getElementById("navbar").style.top = "-200px";
+      }
+      prevScrollpos = currentScrollPos;
+    };
+  }, []);
+
   const navRef = useRef();
 
   const showNavbar = () => {
@@ -56,7 +70,7 @@ const Header = () => {
 
   return (
     <div>
-      <div className="header">
+      <div className="header" id="navbar" style={{ transition: "all 0.5s" }}>
         <nav ref={navRef}>
           <NavLink
             to="/"
@@ -79,31 +93,31 @@ const Header = () => {
           <NavLink to="/Aboutus">{t("aboutus")}</NavLink>
 
           <div>
-            <div>
-              <ul class="navwrapper">
-                <li class="navicon facebook">
-                  <span>
-                    <i class="fab fa-facebook-f"></i>
-                  </span>
-                </li>
-                <li class="navicon twitter">
-                  <span>
-                    <i class="fab fa-twitter"></i>
-                  </span>
-                </li>
-                <li class="navicon instagram">
-                  <span>
-                    <i class="fab fa-instagram"></i>
-                  </span>
-                </li>
-                <li class="navicon youtube">
-                  <span>
-                    <i class="fab fa-youtube"></i>
-                  </span>
-                </li>
-              </ul>
-            </div>
+            <ul class="navwrapper">
+              <li class="navicon facebook">
+                <span>
+                  <i class="fab fa-facebook-f"></i>
+                </span>
+              </li>
+              <li class="navicon twitter">
+                <span>
+                  <i class="fab fa-twitter"></i>
+                </span>
+              </li>
+              <li class="navicon instagram">
+                <span>
+                  <i class="fab fa-instagram"></i>
+                </span>
+              </li>
+              <li class="navicon youtube">
+                <span>
+                  <i class="fab fa-youtube"></i>
+                </span>
+              </li>
+            </ul>
+          </div>
 
+          <div>
             <button
               className="btn btn-link dropdown-toggle"
               type="button"
