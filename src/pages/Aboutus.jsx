@@ -8,8 +8,10 @@ const Aboutus = () => {
     <>
       <div>
         <br />
+        <br />
 
         <div>
+          <br />
           <section class="main-section">
             <div class="cardleft">
               <img src="./images/banner.png" alt="/" />

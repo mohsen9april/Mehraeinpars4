@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, Fragment } from "react";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 import cookie from "js-cookie";
@@ -56,7 +56,7 @@ const Header = () => {
 
   return (
     <div>
-      <header>
+      <div className="header">
         <nav ref={navRef}>
           <NavLink
             to="/"
@@ -79,6 +79,31 @@ const Header = () => {
           <NavLink to="/Aboutus">{t("aboutus")}</NavLink>
 
           <div>
+            <div>
+              <ul class="navwrapper">
+                <li class="navicon facebook">
+                  <span>
+                    <i class="fab fa-facebook-f"></i>
+                  </span>
+                </li>
+                <li class="navicon twitter">
+                  <span>
+                    <i class="fab fa-twitter"></i>
+                  </span>
+                </li>
+                <li class="navicon instagram">
+                  <span>
+                    <i class="fab fa-instagram"></i>
+                  </span>
+                </li>
+                <li class="navicon youtube">
+                  <span>
+                    <i class="fab fa-youtube"></i>
+                  </span>
+                </li>
+              </ul>
+            </div>
+
             <button
               className="btn btn-link dropdown-toggle"
               type="button"
@@ -88,6 +113,7 @@ const Header = () => {
             >
               <GlobeIcon />
             </button>
+
             <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
               <li>
                 <span className="dropdown-item-text">{t("language")}</span>
@@ -118,7 +144,7 @@ const Header = () => {
         <button className="nav-btn" onClick={showNavbar}>
           <FaBars />
         </button>
-      </header>
+      </div>
     </div>
   );
 };
