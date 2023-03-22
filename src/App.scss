@@ -5,12 +5,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  //   background-color: #000;
 
   span {
     display: block;
   }
 }
+
 $card-height: 90vh;
 $card-length: 5;
 $class-name: cards_wrap;
@@ -19,7 +19,7 @@ $class-name: cards_wrap;
     h2 {
       font-size: 3vw;
       text-align: center;
-      margin-top: 35rem;
+      margin-top: 29rem;
 
       span {
         margin-top: 1rem;
@@ -30,20 +30,21 @@ $class-name: cards_wrap;
     }
 
     &-stick {
-      top: -0.1rem;
+      // top: -0.1rem;
+      top: 3rem;
       position: sticky;
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      //   border-radius: 2rem;
-      background-position: center;
       background-image: url("https://s2.uupload.ir/files/a702e208-82ca-4d44-92ee-b6db83734236_tg1k.jpg");
-      background-size: cover;
+      background-position: center;
+      // background-size: cover;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
       height: $card-height;
 
       &.color2 {
-        // background-image: url("https://images.unsplash.com/photo-1654493403997-bc6364a78b6e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3264&q=80");
         background-image: url("https://s2.uupload.ir/files/ganga_papers_z6ja.jpg");
       }
       &.color3 {

@@ -38,6 +38,32 @@ const Home = () => {
     document.title = t("app_title");
   }, [currentLanguage, t]);
 
+  useEffect(() => {
+    // Start
+
+    const spaceHolder = document.querySelector(".space-holder");
+    const horizontal = document.querySelector(".bumper_horizontal");
+    spaceHolder.style.height = `${calcDynamicHeight(horizontal)}px`;
+
+    function calcDynamicHeight(ref) {
+      const vw = window.innerWidth;
+      const vh = window.innerHeight;
+      const objectWidth = ref.scrollWidth;
+      return objectWidth - vw + vh + 150;
+      // 150 is the padding (in pixels) desired on the right side of the .cards container. This can be set to whatever your styles dictate
+    }
+
+    window.addEventListener("scroll", () => {
+      const sticky = document.querySelector(".bumper_sticky");
+      horizontal.style.transform = `translateX(-${sticky.offsetTop}px)`;
+    });
+
+    window.addEventListener("resize", () => {
+      spaceHolder.style.height = `${calcDynamicHeight(horizontal)}px`;
+    });
+    // End
+  }, []);
+
   return (
     <div>
       <div class="cards_wrap">
@@ -63,7 +89,7 @@ const Home = () => {
         </div>
         <div class="cards_wrap__card">
           <div class="cards_wrap__card-stick last">
-            <h2 style={{ color: "white" }}>{t("app_title")}</h2>
+            <h2 style={{ color: "black" }}>{t("app_title")}</h2>
           </div>
         </div>
       </div>
@@ -148,7 +174,25 @@ const Home = () => {
         </div>
       </div> */}
 
-      <div class="site">
+      <section class="bumper_container">
+        <div class="space-holder">
+          <div class="bumper_sticky">
+            <div class="bumper_horizontal">
+              <section role="feed" class="cardss">
+                <article class="sample-card"></article>
+                <article class="sample-card"></article>
+                <article class="sample-card"></article>
+                <article class="sample-card"></article>
+                <article class="sample-card"></article>
+                <article class="sample-card"></article>
+                <article class="sample-card"></article>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* <div class="site">
         <div class="aboutus_container">
           <div class="img"></div>
           <br />
@@ -164,7 +208,7 @@ const Home = () => {
             </a>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* <!--====== CONTACT PART START ======--> */}
       <section id="contact" class="contact_area bg_cover pt-120 pb-130">
@@ -256,7 +300,7 @@ const Home = () => {
       </section>
 
       <div className="Newline_divider">
-        <img src="./images/Logo1.png" />
+        <img src="./images/Logo1.png" alt="/" />
       </div>
 
       <div data-aos="zoom-in-down" data-aos-duration="1000">

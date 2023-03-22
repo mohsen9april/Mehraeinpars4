@@ -360,6 +360,53 @@ p.form-message.error.form-message.error {
   box-shadow: 0 0px 0px rgba(48, 51, 54, 0.1), 0 0px 0px rgba(0, 0, 0, 0);
 }
 
+/* Bumper Section  */
+
+.bumper_container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.space-holder {
+  position: relative;
+  width: 100%;
+}
+
+.bumper_sticky {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.bumper_horizontal {
+  position: absolute;
+  height: 100%;
+  will-change: transform;
+}
+
+.cardss {
+  position: relative;
+  height: 100%;
+  padding: 0 0 0 100px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.sample-card {
+  position: relative;
+  height: 450px;
+  width: 500px;
+  background-color: #111f30;
+  margin-right: 120px;
+  flex-shrink: 0;
+  background-image: url("https://s2.uupload.ir/files/a702e208-82ca-4d44-92ee-b6db83734236_tg1k.jpg");
+}
+
 /*======================================================*/
 /* Products Page  */
 

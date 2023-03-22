@@ -1,4 +1,4 @@
-import React, { useEffect, Fragment } from "react";
+import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 import cookie from "js-cookie";
@@ -54,6 +54,8 @@ const Header = () => {
     window.onscroll = function () {
       var currentScrollPos = window.pageYOffset;
       if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "0";
+      } else if (prevScrollpos < 0) {
         document.getElementById("navbar").style.top = "0";
       } else {
         document.getElementById("navbar").style.top = "-200px";

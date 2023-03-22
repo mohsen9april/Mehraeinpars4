@@ -4,7 +4,7 @@ const Newline = () => {
   return (
     <>
       <Fragment>
-        <section class="slide" id="slide2">
+        <section style={{ height: "8rem" }} class="slide" id="slide2">
           <h1>عملیات خاک برداری</h1>
         </section>
         <br />
