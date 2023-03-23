@@ -38,32 +38,6 @@ const Home = () => {
     document.title = t("app_title");
   }, [currentLanguage, t]);
 
-  useEffect(() => {
-    // Start
-
-    const spaceHolder = document.querySelector(".space-holder");
-    const horizontal = document.querySelector(".bumper_horizontal");
-    spaceHolder.style.height = `${calcDynamicHeight(horizontal)}px`;
-
-    function calcDynamicHeight(ref) {
-      const vw = window.innerWidth;
-      const vh = window.innerHeight;
-      const objectWidth = ref.scrollWidth;
-      return objectWidth - vw + vh + 150;
-      // 150 is the padding (in pixels) desired on the right side of the .cards container. This can be set to whatever your styles dictate
-    }
-
-    window.addEventListener("scroll", () => {
-      const sticky = document.querySelector(".bumper_sticky");
-      horizontal.style.transform = `translateX(-${sticky.offsetTop}px)`;
-    });
-
-    window.addEventListener("resize", () => {
-      spaceHolder.style.height = `${calcDynamicHeight(horizontal)}px`;
-    });
-    // End
-  }, []);
-
   return (
     <div>
       <div class="cards_wrap">
@@ -97,14 +71,17 @@ const Home = () => {
       <br />
       <br />
 
-      <h2 style={{ textAlign: "center" }}> {t("mehraeinParsproducts")}</h2>
+      <h2 style={{ textAlign: "center" }} data-aos-duration="1500" data-aos="fade-down">
+        {" "}
+        {t("mehraeinParsproducts")}
+      </h2>
 
       {/* Next Card Home */}
       <div
         style={{ background: "linear-gradient(210deg, #fb8e2a, #fdc154)" }}
         className="paper_container_Home"
       >
-        <div class="paper_Home">
+        <div class="paper_Home" data-aos-duration="1500" data-aos="fade-up">
           <img class="poster_Home" src="./images/testliner.jpg" alt="/" />
           {/* <h2>Featured</h2> */}
           <h1>{t("testliner")} </h1>
@@ -115,7 +92,7 @@ const Home = () => {
           </a>
           <div class="space"></div>
         </div>
-        <div class="paper_Home">
+        <div class="paper_Home" data-aos-duration="1500" data-aos="fade-up">
           <img class="poster_Home" src="./images/liner.jpg" alt="/" />
           {/* <h2>Featured</h2> */}
           <h1> {t("liner")}</h1>
@@ -126,7 +103,7 @@ const Home = () => {
           </a>
           <div class="space"></div>
         </div>
-        <div class="paper_Home">
+        <div class="paper_Home" data-aos-duration="1500" data-aos="fade-up">
           <img class="poster_Home" src="./images/fluting.jpg" alt="/" />
           {/* <h2>Featured</h2> */}
           <h1> {t("fluting")}</h1>
@@ -153,7 +130,9 @@ const Home = () => {
       <br />
 
       <section class="slide" id="slide2">
-        <h1>MEHRAEINPARS PAPER MILL COMPANY</h1>
+        <h1 data-aos-duration="1500" data-aos="zoom-in-up">
+          MEHRAEINPARS PAPER MILL COMPANY
+        </h1>
       </section>
 
       <br />
@@ -173,24 +152,6 @@ const Home = () => {
           </div>
         </div>
       </div> */}
-
-      <section class="bumper_container">
-        <div class="space-holder">
-          <div class="bumper_sticky">
-            <div class="bumper_horizontal">
-              <section role="feed" class="cardss">
-                <article class="sample-card"></article>
-                <article class="sample-card"></article>
-                <article class="sample-card"></article>
-                <article class="sample-card"></article>
-                <article class="sample-card"></article>
-                <article class="sample-card"></article>
-                <article class="sample-card"></article>
-              </section>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* <div class="site">
         <div class="aboutus_container">
@@ -291,16 +252,18 @@ const Home = () => {
 
       <div>
         <div class="other-section"></div>
-        <div style={{ height: "50vh" }} class="cd"></div>
+        <div style={{ height: "60vh" }} class="cd"></div>
         <div class="other-section"></div>
       </div>
 
       <section class="slide" id="slide2">
-        <h1>کاغذسازی مهرآیین پارس </h1>
+        <h1 data-aos-duration="1500" data-aos="slide-up">
+          کاغذسازی مهرآیین پارس{" "}
+        </h1>
       </section>
 
       <div className="Newline_divider">
-        <img src="./images/Logo1.png" alt="/" />
+        <img data-aos-duration="1500" data-aos="zoom-out-right" src="./images/Logo1.png" alt="/" />
       </div>
 
       <div data-aos="zoom-in-down" data-aos-duration="1000">

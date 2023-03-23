@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import { useTranslation } from "react-i18next";
+import Accordion from "../components/Accordion";
 
 const Aboutus = () => {
   const { t } = useTranslation();
@@ -97,6 +98,9 @@ const Aboutus = () => {
           <div class="space"></div>
         </div>
       </div> */}
+
+      <Accordion />
+      <br />
     </>
   );
 };

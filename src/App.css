@@ -160,7 +160,7 @@ p {
   }
 }
 
-/* NextCards Home  */
+/* NextCards Home ---------------------------------------------------------------  */
 .paper_container_Home {
   background-image: linear-gradient(-45deg, #eef0f3 0%, #f6f5f3 100%);
   font-size: 62.5%;
@@ -169,14 +169,15 @@ p {
   -webkit-font-smoothing: antialiased;
   display: flex;
   flex-wrap: wrap;
+  padding: 0 8rem;
 }
 
 .paper_Home {
-  margin: 6vh auto;
+  margin: 2vh auto;
   min-width: 20vw;
-  max-width: 60vh;
+  max-width: 48vh;
   min-height: 20vh;
-  border-radius: 4px;
+  max-height: auto;
   box-shadow: 0 15px 35px rgba(50, 50, 90, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
   transition: 0.6s ease;
   background: white;
@@ -201,8 +202,7 @@ p {
 }
 
 .paper_Home h1 {
-  font-size: 2.6rem;
-  /* letter-spacing: 1px; */
+  font-size: 1.5rem;
   margin: 1vh 2vw;
 }
 
@@ -215,19 +215,20 @@ p {
 }
 
 .paper_Home hr {
-  width: 40%;
+  width: 80%;
   margin-top: 3vh;
   margin-bottom: 3vh;
   border: 0;
   border-bottom: 1px solid #000000;
+  margin: auto;
 }
 
 .paper_Home p {
-  margin: 1vh 4vw;
+  margin: 1vh 2vw;
   text-align: center;
   padding-bottom: 1vh;
   font-weight: 400;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   line-height: 1.25rem;
 }
 
@@ -262,17 +263,33 @@ p {
 }
 
 .paper_Home .space {
-  height: 4vh;
+  height: 2vh;
 }
 
-/* Site Home  */
+@media (max-width: 640px) {
+  .paper_container_Home {
+    background-image: linear-gradient(-45deg, #eef0f3 0%, #f6f5f3 100%);
+    font-size: 62.5%;
+    user-select: none;
+    transition: 0.3s ease;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 3rem;
+  }
 
-.site .aboutus_container .img_Home {
-  height: 500px;
-  width: 100%;
-  background: url("https://s2.uupload.ir/files/a702e208-82ca-4d44-92ee-b6db83734236_tg1k.jpg");
-  background-position: center;
-  background-size: cover;
+  .paper_Home {
+    margin: 1.5vh auto;
+    min-width: 20vw;
+    max-width: 60vh;
+    min-height: 20vh;
+    border-radius: 4px;
+    box-shadow: 0 15px 35px rgba(50, 50, 90, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+    transition: 0.6s ease;
+    background: white;
+    text-align: center;
+    border-radius: 1rem;
+  }
 }
 
 /* CONTACT Home  */
@@ -593,7 +610,6 @@ li {
   }
 }
 
-/* Just Copy The Code Above */
 /* ======================== */
 
 /* ----------- */

@@ -76,14 +76,14 @@ const Header = () => {
         <nav ref={navRef}>
           <NavLink
             to="/"
-            //   style={({ isActive }) =>
-            //     isActive
-            //       ? {
-            //           color: "#fff",
-            //           background: "#CC9D69",
-            //         }
-            //       : { color: "#000000", background: "#ffffff" }
-            //   }
+            // style={({ isActive }) =>
+            //   isActive
+            //     ? {
+            //         color: "#fff",
+            //         background: "#CC9D69",
+            //       }
+            //     : { color: "#000000", background: "#ffffff" }
+            // }
           >
             {t("home")}
           </NavLink>
