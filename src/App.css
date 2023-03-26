@@ -1467,7 +1467,7 @@ div.text-container {
 .sale_section {
   /* background-color: yellowgreen; */
   width: 95%;
-  direction: rtl;
+  /* direction: rtl; */
   margin: auto;
 }
 
@@ -1504,8 +1504,8 @@ div.text-container {
 }
 
 .sale_right {
-  direction: rtl;
-  text-align: right;
+  /* direction: rtl; */
+  /* text-align: right; */
   padding: 4rem 2rem;
   flex: 1;
 }

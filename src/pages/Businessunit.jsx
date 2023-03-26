@@ -1,8 +1,11 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useTranslation } from "react-i18next";
 
 const Businessunit = () => {
+  const { t } = useTranslation();
+
   // For AOS
   useEffect(() => {
     AOS.init({
@@ -17,20 +20,14 @@ const Businessunit = () => {
       <div className="cd_Header">
         <img src="./images/Sale-Banner.jpg" alt="/" />
         <div class="centered">
-          <h2>واحد بازرگانی کاغذسازی مهرآیین پارس</h2>
+          <h2 style={{ color: "white" }}>{t("businessunitmehr")}</h2>
         </div>
       </div>
       <br />
       <div className="sale_section">
-        <h2>واحد بازرگانی </h2>
+        <h2>{t("businessunit")}</h2>
         <br />
-        <p>
-          واحد بازرگانی با هدف ارائه محصولات و خدمات و در ارتباط مستقیم با مصرف‌کنندگان اقدام به
-          فعالیت می‌کند. عرضه خدمات و فروش محصولات ما، همواره در گرو بررسی و کسب شناخت کافی از
-          بازارهای هدف است. این شناخت در هر مرحله از کار سبب انجام تلاش‌های هدفدار و جهت‌دار برای
-          تامین این نیازها می‌شود. به همین منظور بهره‌گیری از تیم فروش قوی و متخصص برای به حرکت
-          درآوردن چرخه تولید و توزیع، از اقدامات لازم در این زمینه است.
-        </p>
+        <p>{t("businessunittext")}</p>
       </div>
 
       <br />
@@ -39,7 +36,7 @@ const Businessunit = () => {
       <section>
         <div className="sale_container">
           <div data-aos-duration="1000" data-aos="fade-up" className="sale_left">
-            <img src="./images/sale2.jpg" alt="/" />
+            <img src="./images/sale2.jpg" alt="An imageshowcasingproductsonsale." />
           </div>
           <div data-aos-duration="1000" data-aos="fade-left" className="sale_right">
             <h2>مهمترین فعالیت‌های تیم فروش ما</h2>
@@ -55,11 +52,16 @@ const Businessunit = () => {
         </div>
       </section>
       <br />
+
       <section>
+        {/* Sale container section */}
         <div className="sale_container">
+          {/* Sale left section */}
           <div data-aos-duration="1000" data-aos="fade-left" className="sale_left">
             <img src="./images/sale1.jpg" alt="/" />
           </div>
+
+          {/* Sale right section */}
           <div data-aos-duration="1000" data-aos="fade-right" className="sale_right">
             <h2>واحد‌های زیر مجموعه‌ واحد فروش شرکت</h2>
             <ul>
@@ -70,6 +72,7 @@ const Businessunit = () => {
           </div>
         </div>
       </section>
+
       <br />
     </div>
   );
