@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import "./App.scss";
 import { Route, Routes } from "react-router-dom";
@@ -14,29 +14,35 @@ import Error from "./pages/Error";
 import Footer from "./pages/Footer";
 
 function App() {
+  const [loding, SetLoding] = useState(true);
+  const spinner = document.getElementById("spinner");
+  if (spinner) {
+    setTimeout(() => {
+      spinner.style.display = "none";
+      SetLoding(false);
+    }, 500);
+  }
   return (
-    <div>
-      <Header />
-      <br />
-      <br />
-      <br />
-      <br />
-
+    !loding && (
       <div>
-        <Routes>
-          <Route excact path="/" element={<Home />} />
-          <Route path="/Products" element={<Products />} />
-          <Route path="/Businessunit" element={<Businessunit />} />
-          <Route path="/QualityControl" element={<QualityControl />} />
-          <Route path="/Newline" element={<Newline />} />
-          <Route path="/Contactus" element={<Contactus />} />
-          <Route path="/Aboutus" element={<Aboutus />} />
-          <Route path="*" element={<Error />} />
-        </Routes>
-      </div>
+        <Header />
 
-      <Footer />
-    </div>
+        <div>
+          <Routes>
+            <Route excact path="/" element={<Home />} />
+            <Route path="/Products" element={<Products />} />
+            <Route path="/Businessunit" element={<Businessunit />} />
+            <Route path="/QualityControl" element={<QualityControl />} />
+            <Route path="/Newline" element={<Newline />} />
+            <Route path="/Contactus" element={<Contactus />} />
+            <Route path="/Aboutus" element={<Aboutus />} />
+            <Route path="*" element={<Error />} />
+          </Routes>
+        </div>
+
+        <Footer />
+      </div>
+    )
   );
 }
 
