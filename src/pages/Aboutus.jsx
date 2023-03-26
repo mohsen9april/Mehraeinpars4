@@ -9,7 +9,6 @@ const Aboutus = () => {
     <>
       <div>
         <div>
-          <br />
           <section class="main-section">
             <div class="cardleft">
               <img src="./images/banner.png" alt="/" />

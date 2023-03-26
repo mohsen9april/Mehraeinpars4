@@ -52,6 +52,69 @@ p {
 
 /* Home--------------------------------------------------------- */
 
+.arrows {
+  width: 60px;
+  height: 72px;
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  bottom: 100px;
+  z-index: 4;
+}
+
+.arrows path {
+  stroke: #2994d1;
+  fill: transparent;
+  stroke-width: 2px;
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/ {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.arrows path.a1 {
+  animation-delay: -1s;
+  -webkit-animation-delay: -1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+  animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s; /* Safari 和 Chrome */
+}
+
 .Home_Products_container {
   width: 100%;
   min-height: 60vh;
@@ -1029,6 +1092,7 @@ fieldset {
   justify-content: center;
   flex-wrap: wrap;
   background-image: linear-gradient(210deg, #fb8e2a, #fdc154);
+  padding-top: 4rem;
 }
 .cardleft {
   width: 500px;
@@ -1045,7 +1109,7 @@ fieldset {
 .cardleft img {
   display: flex;
   margin: auto;
-  max-width: 480px;
+  max-width: 460px;
   height: auto;
   border-radius: 2rem;
 }
@@ -1286,11 +1350,11 @@ div.text-container {
 
 .header_qc {
   /* background-color: yellow; */
-  width: 95%;
+  width: 100%;
   height: auto;
   margin: auto;
-  margin-top: 1rem;
-  padding: 1rem;
+  /* margin-top: 1rem; */
+  /* padding: 1rem; */
   position: relative;
 }
 
@@ -1337,7 +1401,7 @@ div.text-container {
   display: flex;
   margin: auto;
   width: 100%;
-  border-radius: 30px;
+  /* border-radius: 30px; */
 }
 
 .description_qc {
@@ -1419,7 +1483,7 @@ div.text-container {
 /* business unit  */
 .commercialdepartment_container {
   /* background-color: aqua; */
-  width: 98%;
+  width: 93%;
   margin: auto;
 }
 
@@ -1428,16 +1492,16 @@ div.text-container {
   position: relative;
   text-align: center;
   align-items: center;
-  padding-top: 1rem;
-  width: 95%;
+  /* padding-top: 1rem; */
+  width: 98%;
   margin: auto;
 }
 
 .cd_Header img {
   display: flex;
   margin: auto;
-  width: 100%;
-  border-radius: 40px;
+  width: 90%;
+  /* border-radius: 40px; */
 }
 
 .centered {

@@ -3,6 +3,10 @@ import React, { Fragment } from "react";
 const Newline = () => {
   return (
     <>
+      <br />
+      <br />
+      <br />
+      <br />
       <Fragment>
         <section style={{ height: "8rem" }} class="slide" id="slide2">
           <h1>عملیات خاک برداری</h1>

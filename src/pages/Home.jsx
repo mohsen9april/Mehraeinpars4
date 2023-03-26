@@ -40,6 +40,12 @@ const Home = () => {
 
   return (
     <div>
+      <svg class="arrows">
+        <path class="a1" d="M0 0 L30 32 L60 0"></path>
+        <path class="a2" d="M0 20 L30 52 L60 20"></path>
+        <path class="a3" d="M0 40 L30 72 L60 40"></path>
+      </svg>
+
       <div class="cards_wrap">
         <div class="cards_wrap__card">
           <div class="cards_wrap__card-stick">
@@ -71,7 +77,7 @@ const Home = () => {
       <br />
       <br />
 
-      <h2 style={{ textAlign: "center" }} data-aos-duration="1500" data-aos="fade-down">
+      <h2 style={{ textAlign: "center" }} data-aos-duration="1800" data-aos="fade-down">
         {" "}
         {t("mehraeinParsproducts")}
       </h2>
@@ -81,7 +87,7 @@ const Home = () => {
         style={{ background: "linear-gradient(210deg, #fb8e2a, #fdc154)" }}
         className="paper_container_Home"
       >
-        <div class="paper_Home" data-aos-duration="1500" data-aos="fade-up">
+        <div class="paper_Home" data-aos-duration="1300" data-aos="fade-up">
           <img class="poster_Home" src="./images/testliner.jpg" alt="/" />
           {/* <h2>Featured</h2> */}
           <h1>{t("testliner")} </h1>
@@ -92,7 +98,7 @@ const Home = () => {
           </a>
           <div class="space"></div>
         </div>
-        <div class="paper_Home" data-aos-duration="1500" data-aos="fade-up">
+        <div class="paper_Home" data-aos-duration="1600" data-aos="fade-up">
           <img class="poster_Home" src="./images/liner.jpg" alt="/" />
           {/* <h2>Featured</h2> */}
           <h1> {t("liner")}</h1>
@@ -103,7 +109,7 @@ const Home = () => {
           </a>
           <div class="space"></div>
         </div>
-        <div class="paper_Home" data-aos-duration="1500" data-aos="fade-up">
+        <div class="paper_Home" data-aos-duration="2300" data-aos="fade-up">
           <img class="poster_Home" src="./images/fluting.jpg" alt="/" />
           {/* <h2>Featured</h2> */}
           <h1> {t("fluting")}</h1>
@@ -118,7 +124,7 @@ const Home = () => {
 
       <br />
 
-      <div data-aos-duration="1000" data-aos="slide-up" className="home_ourway">
+      <div data-aos-duration="1800" data-aos="slide-up" className="home_ourway">
         <h2 style={{ textAlign: "center" }}> {t("ourresponsibility")}</h2>
         <img
           style={{ display: "flex", margin: "auto", width: "80%" }}
@@ -130,7 +136,7 @@ const Home = () => {
       <br />
 
       <section class="slide" id="slide2">
-        <h1 data-aos-duration="1500" data-aos="zoom-in-up">
+        <h1 data-aos-duration="1800" data-aos="zoom-in-up">
           MEHRAEINPARS PAPER MILL COMPANY
         </h1>
       </section>
@@ -257,16 +263,16 @@ const Home = () => {
       </div>
 
       <section class="slide" id="slide2">
-        <h1 data-aos-duration="1500" data-aos="slide-up">
+        <h1 data-aos-duration="2200" data-aos="slide-up">
           کاغذسازی مهرآیین پارس{" "}
         </h1>
       </section>
 
       <div className="Newline_divider">
-        <img data-aos-duration="1500" data-aos="zoom-out-right" src="./images/Logo1.png" alt="/" />
+        <img data-aos-duration="2000" data-aos="zoom-out-right" src="./images/Logo1.png" alt="/" />
       </div>
 
-      <div data-aos="zoom-in-down" data-aos-duration="1000">
+      <div data-aos="zoom-in-down" data-aos-duration="1800">
         <img
           style={{ display: "flex", margin: "auto", width: "80%" }}
           src="./images/home1.png"

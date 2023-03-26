@@ -16,12 +16,16 @@ const Businessunit = () => {
 
   return (
     <div className="commercialdepartment_container">
+      <br />
+      <br />
+      <br />
+      <br />
       {/* <h2>Commercial-Department</h2> */}
       <div className="cd_Header">
-        <img src="./images/Sale-Banner.jpg" alt="/" />
-        <div class="centered">
+        <img src="./images/Business.jpg" alt="/" />
+        {/* <div class="centered">
           <h2 style={{ color: "white" }}>{t("businessunitmehr")}</h2>
-        </div>
+        </div> */}
       </div>
       <br />
       <div className="sale_section">
