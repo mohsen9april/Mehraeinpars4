@@ -54,22 +54,22 @@ const Home = () => {
         </div>
         <div class="cards_wrap__card">
           <div class="cards_wrap__card-stick color2">
-            <h2 style={{ color: "white" }}>{t("app_title")}</h2>
+            {/* <h2 style={{ color: "white" }}>{t("app_title")}</h2> */}
           </div>
         </div>
         <div class="cards_wrap__card">
           <div class="cards_wrap__card-stick color3">
-            <h2 style={{ color: "white" }}>{t("app_title")}</h2>
+            {/* <h2 style={{ color: "white" }}>{t("app_title")}</h2> */}
           </div>
         </div>
         <div class="cards_wrap__card">
           <div class="cards_wrap__card-stick color4">
-            <h2 style={{ color: "white" }}>{t("app_title")}</h2>
+            {/* <h2 style={{ color: "white" }}>{t("app_title")}</h2> */}
           </div>
         </div>
         <div class="cards_wrap__card">
           <div class="cards_wrap__card-stick last">
-            <h2 style={{ color: "black" }}>{t("app_title")}</h2>
+            {/* <h2 style={{ color: "black" }}>{t("app_title")}</h2> */}
           </div>
         </div>
       </div>
