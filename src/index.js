@@ -1,4 +1,4 @@
-import React, { StrictMode, Suspense } from "react";
+import React, { StrictMode } from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
@@ -29,19 +29,12 @@ i18n
     react: { useSuspense: false },
   });
 
-const loading = (
-  <div className="spinner-border" role="status">
-    <span className="visually-hidden">Loading...</span>
-  </div>
-);
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <Suspense fallback={loading}>
-    <StrictMode>
-      <BrowserRouter>
-        <ScrollToTop />
-        <App />
-      </BrowserRouter>
-    </StrictMode>
-  </Suspense>
+  <StrictMode>
+    <BrowserRouter>
+      <ScrollToTop />
+      <App />
+    </BrowserRouter>
+  </StrictMode>
 );

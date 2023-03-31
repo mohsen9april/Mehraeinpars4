@@ -15,10 +15,12 @@ const Products = () => {
   }, []);
   return (
     <>
-      <br />
-      <br />
-      <br />
-      <br />
+      {/* <!--start Recipes--> */}
+      <div class="recipes">
+        <img src="./images/productsbanner.jpg" alt="/" />
+      </div>
+      {/* <!--End Recipes--> */}
+
       <div className="products_container">
         <div className="home_title">
           <h3 style={{ textAlign: "center" }}> {t("mehraeinParsproducts")}</h3>

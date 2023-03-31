@@ -12,7 +12,8 @@
 }
 
 .header.scrolled {
-  background: white;
+  /* background: white; */
+  background: #cc9d69;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
   transition: all 1s;
   height: 4rem;

@@ -1,13 +1,16 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const QualityControl = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="qualitycontrol_container">
       <div className="header_qc">
         <div className="topheader_qc">
           <img src="./images/QC2.png" alt="/" />
           <div class="qc_centered">
-            <h2 style={{ color: "white" }}>واحد کنترل کیفیت </h2>
+            <h2 style={{ color: "black" }}>واحد کنترل کیفیت </h2>
           </div>
         </div>
       </div>
@@ -18,121 +21,72 @@ const QualityControl = () => {
       <br />
 
       <div className="description_qc">
-        <p>
-          به منظور تحقق حصول اطمينان از کيفيت محصولات تحويل شده به مشتريان در تطابق با استانداردهاي
-          کيفي مورد توافق با مشتري، اعتلاي نگرش کيفيت در سطح سازمان، گسترش فرهنگ کيفيت درزنجيره ارزش
-          ;کاغذ و گسترش دامنه خدمات آزمايشگاهي در مرحله اول به شرکت و سپس در سطح صنعت بسته بندی کشور
-          همچنين تطبيق با نيازمندي هاي روز مشتريان نظام جامع كنترل کيفيت محصول در شرکت کاغذسازی
-          مهرآیین پارس پايه گذاري شده است.
-        </p>
+        <p> {t("qctext1")}</p>
         <br />
-        <p>
-          واحد کنترل کيفيت شركت کاغذسازی مهرآیین پارس در سال ۱۳۹۸ با هدف ارتقاء سطح کيفي محصولات با
-          خصوصيات مطلوب و رضايتمندي مشتريان فعاليت خود را آغاز کرد.کليه امور تست و آزمون وکنترل
-          کيفيت در كارخانه تحت نظارت این واحد و زير نظر مديريت کارخانه فعاليت مي نمايد و رسالت آن
-          براساس سياستهاي کلي شرکت ارتقاء سطح کيفي محصولات، جلب رضايت مشتري و در نتيجه افزايش توان
-          رقابتي محصولات تولیدی تعريف شده است.
-        </p>
+        <p> {t("qctext2")}</p>
         <br />
-        <p>
-          واحد کنترل كيفيت در حال حاضر شامل آزمایشگاه کنترل خطوط تولید و آزمایشگاه مرکزی مي باشد که
-          اين مجموعه براساس الزامات استانداردهاي داخلی و انطباق با استانداردهاي ملي و در راستای
-          سیستم مدیریت کیفیت به کار خود ادامه مي دهد.
-        </p>
+        <p> {t("qctext3")}</p>
         <br />
-        <p>
-          وظايف كنترلي واحد كنترل كيفيت در پروسه توليد شامل مواد اوليه ورودي ،بازرسي در حين فرايند
-          توليد و بازرسي محصول نهايي را شامل مي شود.بازرسي محصول نهايي يكي از مهمترين فعاليت هاي
-          واحد كنترل كيفيت بوده كه آخرين ایستگاه جهت تائيد تطابق محصول با پارامترهای كيفي تعيين شده
-          داخلی و توجه به بخشي ازنيازمنديهاي مشتري در رابطه با بارگيري و ارسال محصولات مطابق با
-          خواست مشتري مي باشد.
-        </p>
+        <p> {t("qctext4")}</p>
         <br />
-        <p>
-          محدوده اجرايي اين واحد شامل كليه محصولات توليدي خطوط تولید (شامل كاغذهاي لاینر بازیافتی ،
-          کاغذ بسته بندی رنگی و فلوتينگ می باشد) عمليات اجرايي توسط کارشناسان و مهندسین فرایند
-          وتكنيسين ها ی واحد صورت مي گيرد. کارشناس كنترل كيفي در كنترل بارگيري با توجه به حواله
-          تحويل كالا و نوع ماشين، نوع كاغذ ودرجه كيفيتي و نحوه بارگيري آن اقدام و نظارت لازم را
-          انجام مي دهد.
-        </p>
+        <p> {t("qctext5")}</p>
         <br />
-        <p>
-          در کاغذسازی مهرآیین پارس مانند بسياري از سازمانهاكليه اقلام ورودي به شرکت شامل کلیه مواد
-          افزودنی مورد استفاده وخصوصا مواد اولیه که تاثیر بسزایی بر كيفيت محصول نهايي دارد مطابق یک
-          سيستم نظام مند تعریف شده و معيارهاي پذيرش كنترل، بازرسي و نهايتآ مورد تاييد واحد "كنترل
-          كيفيت قرار میگیرد.
-        </p>
+        <p> {t("qctext6")}</p>
         <br />
       </div>
+
+      <h3 style={{ color: "black", textTransform: "uppercase", textAlign: "center" }}>
+        {" "}
+        {t("qceq")}
+      </h3>
 
       <div class="qc_assets_container">
         <div class="qc_assets_card">
           <img
-            src="https://images.unsplash.com/photo-1533658925625-2f94d23fc425?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=894c97adfd68510170db9ae89704c92e&auto=format&fit=crop&w=800&q=60"
+            src="https://www.ecoinstrument.com.my/wp-content/uploads/2020/04/ring-criush-testing-machine-300x300.jpg"
             alt="/"
           />
-          <h3>Card title</h3>
+          <h3 style={{ color: "black" }}>Crush Tester</h3>
           <p>Card description</p>
         </div>
 
         <div class="qc_assets_card">
-          <img
-            src="https://images.unsplash.com/photo-1494122353634-c310f45a6d3c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ecd4e63ddbfbc55465d3d0abc16ec5c5&auto=format&fit=crop&w=2850&q=80"
-            alt="/"
-          />
-          <h3>Card title</h3>
+          <img src="https://www.ubiquesystems.com/img/cobb-tester.jpg" alt="/" />
+          <h3 style={{ color: "black" }}>Cobb Tester</h3>
           <p>Card description</p>
         </div>
 
         <div class="qc_assets_card">
-          <img
-            src="https://images.unsplash.com/photo-1503867913710-3f1656e94ac9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4ec81722964d9d4b89884c82bcb11642&auto=format&fit=crop&w=1027&q=80"
-            alt="/"
-          />
-          <h3>Card title</h3>
+          <img src="https://www.ubiquesystems.com/img/Bursting-Strength-Tester.jpg" alt="/" />
+          <h3 style={{ color: "black" }}>Bursting Strength Tester (BST)</h3>
           <p>Card description</p>
         </div>
         <div class="qc_assets_card">
-          <img
-            src="https://images.unsplash.com/photo-1533756972958-d6f38a9761e3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d710493bc1818842db8ce47f887708f2&auto=format&fit=crop&w=2089&q=80"
-            alt="/"
-          />
-          <h3>Card title</h3>
+          <img src="https://www.ubiquesystems.com/img/caliper.jpg" alt="/" />
+          <h3 style={{ color: "black" }}>Caliper Thickness Gauge</h3>
           <p>Card description</p>
         </div>
         <div class="qc_assets_card">
-          <img
-            src="https://images.unsplash.com/photo-1502957291543-d85480254bf8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=220d7cdb8357ec667ed2c4d4a3de3eb0&auto=format&fit=crop&w=1567&q=80"
-            alt="/"
-          />
-          <h3>Card title</h3>
+          <img src="https://www.ubiquesystems.com/img/moisture-tester.jpg" alt="/" />
+          <h3 style={{ color: "black" }}>Moisture Tester</h3>
           <p>Card description</p>
         </div>
         <div class="qc_assets_card">
-          <img
-            src="https://images.unsplash.com/photo-1533770699395-5761e5d08106?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=363f39b71ee57e936da6f04a7830895f&auto=format&fit=crop&w=1949&q=80"
-            alt="/"
-          />
-          <h3>Card title</h3>
+          <img src="https://www.ubiquesystems.com/img/tearresistancetester.jpg" alt="/" />
+          <h3 style={{ color: "black" }}>Tear Resistance Tester</h3>
           <p>Card description</p>
         </div>
         <div class="qc_assets_card">
-          <img
-            src="https://images.unsplash.com/photo-1533806481099-93f1242aea1e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0f2ba53e0ed1f9ecd16acb04ad0f70f7&auto=format&fit=crop&w=1950&q=80"
-            alt="/"
-          />
-          <h3>Card title</h3>
+          <img src="https://cdn.productimages.abb.com/9IBA222934_400x400.jpg" alt="/" />
+          <h3 style={{ color: "black" }}>Strip Punch</h3>
           <p>Card description</p>
         </div>
         <div class="qc_assets_card">
-          <img
-            src="https://images.unsplash.com/photo-1533738630286-f1f4a61705f8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5e2bc6bb33302df3a49d62983fe535ef&auto=format&fit=crop&w=800&q=60"
-            alt="/"
-          />
-          <h3>Card title</h3>
+          <img src="https://cdn.productimages.abb.com/9IBA222935_400x400.jpg" alt="/" />
+          <h3 style={{ color: "black" }}>Circular Cutter</h3>
           <p>Card description</p>
         </div>
-        <div class="qc_assets_card">
+        {/* <div class="qc_assets_card">
           <img
             src="https://images.unsplash.com/photo-1533762385849-5aa14c83dbaf?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=040eec84d37ae33312c1bda4d0dfb0f6&auto=format&fit=crop&w=800&q=60"
             alt="/"
@@ -147,7 +101,7 @@ const QualityControl = () => {
           />
           <h3>Card title</h3>
           <p>Card description</p>
-        </div>
+        </div> */}
       </div>
 
       <br />

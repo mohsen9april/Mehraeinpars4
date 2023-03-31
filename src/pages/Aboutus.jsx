@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import { useTranslation } from "react-i18next";
-import Accordion from "../components/Accordion";
+// import Accordion from "../components/Accordion";
 
 const Aboutus = () => {
   const { t } = useTranslation();
@@ -11,7 +11,7 @@ const Aboutus = () => {
         <div>
           <section class="main-section">
             <div class="cardleft">
-              <img src="./images/banner.png" alt="/" />
+              <img src="./images/logo2.png" alt="/" />
             </div>
             <div class="cardright">
               <h2> {t("aboutus")}</h2>
@@ -36,8 +36,6 @@ const Aboutus = () => {
             </div>
           </div>
         </div> */}
-
-        <br />
       </div>
 
       {/* Next Card  */}
@@ -97,9 +95,6 @@ const Aboutus = () => {
           <div class="space"></div>
         </div>
       </div> */}
-
-      <Accordion />
-      <br />
     </>
   );
 };

@@ -83,10 +83,7 @@ const Home = () => {
       </h2>
 
       {/* Next Card Home */}
-      <div
-        style={{ background: "linear-gradient(210deg, #fb8e2a, #fdc154)" }}
-        className="paper_container_Home"
-      >
+      <div style={{ background: "#cc9d69" }} className="paper_container_Home">
         <div class="paper_Home" data-aos-duration="1300" data-aos="fade-up">
           <img class="poster_Home" src="./images/testliner.jpg" alt="/" />
           {/* <h2>Featured</h2> */}
@@ -263,13 +260,13 @@ const Home = () => {
       </div>
 
       <section class="slide" id="slide2">
-        <h1 data-aos-duration="2200" data-aos="slide-up">
-          کاغذسازی مهرآیین پارس{" "}
+        <h1 data-aos-duration="2200" data-aos="slide-up" style={{ textTransform: "Uppercase" }}>
+          {t("app_title")}
         </h1>
       </section>
 
       <div className="Newline_divider">
-        <img data-aos-duration="2000" data-aos="zoom-out-right" src="./images/Logo1.png" alt="/" />
+        <img data-aos-duration="2000" data-aos="zoom-out-right" src="./images/logo2.png" alt="/" />
       </div>
 
       <div data-aos="zoom-in-down" data-aos-duration="1800">

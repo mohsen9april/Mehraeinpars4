@@ -60,6 +60,12 @@ p {
   margin: 0px;
 }
 
+@media only screen and (min-width: 768px) {
+  p {
+    font-size: 0.9em;
+  }
+}
+
 /* Home--------------------------------------------------------- */
 
 .arrows {
@@ -801,14 +807,15 @@ section.module.parallax-12 {
 .Newline_divider {
   margin-top: 1rem;
   /* background-color: #005aee; */
-  background-image: linear-gradient(210deg, #fb8e2a, #fdc154);
+  /* background-image: linear-gradient(210deg, #fb8e2a, #fdc154); */
+  background-color: #cc9d69;
 }
 
 .Newline_divider img {
-  padding: 2rem;
+  padding: 1rem;
   display: flex;
   margin: auto;
-  height: 30vh;
+  height: 35vh;
 }
 
 @media only screen and (max-width: 640px) {
@@ -970,14 +977,39 @@ section.module.parallax-12 {
 
 /* ------ Contact us -------------------------------------- */
 
+.contactusheader {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  width: 80%;
+}
+
+.left {
+  /* background-color: red; */
+  text-align: center;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.right {
+  /* background-color: lightblue; */
+  text-align: center;
+  line-height: 50px;
+  width: 640px;
+}
+
 .contactus_container {
   font-weight: 100;
   font-size: 12px;
   line-height: 30px;
   color: #777;
   background: #4caf50;
-
-  max-width: 400px;
+  max-width: 460px;
   width: 100%;
   margin: 0 auto;
   position: relative;
@@ -995,7 +1027,7 @@ section.module.parallax-12 {
 #contactus {
   background: #f9f9f9;
   padding: 25px;
-  margin: 150px 0;
+  margin: 50px 0;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
@@ -1094,15 +1126,17 @@ fieldset {
   color: #888;
 }
 
-/* ------ AboutUs -------------------------------------- */
+/* ------ AboutUs --------------------------------------------- */
 
 .main-section {
   display: flex;
   margin: auto;
   justify-content: center;
   flex-wrap: wrap;
-  background-image: linear-gradient(210deg, #fb8e2a, #fdc154);
-  padding-top: 4rem;
+  /* background-image: linear-gradient(210deg, #fb8e2a, #fdc154); */
+  background: #cc9d69;
+  padding-top: 6rem;
+  height: 90vh;
 }
 .cardleft {
   width: 500px;
@@ -1245,6 +1279,23 @@ div.text-container {
 
 @media screen and (min-width: 1200px) {
 }
+
+/*Start Recipes*/
+
+.recipes {
+  display: flex;
+  margin: auto;
+}
+
+.recipes img {
+  padding: 4rem 2rem 0 0;
+  display: flex;
+  margin: auto;
+  width: 50%;
+  height: auto;
+}
+
+/*End Recipes*/
 
 /* Next Card -------- */
 
@@ -1394,11 +1445,19 @@ div.text-container {
   border: 1px solid rgba(255, 255, 255, 0.21); */
 
   /* From https://css.glass */
-  background: #252734;
+  /* background: #cc9d69;
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(6.8px);
-  -webkit-backdrop-filter: blur(6.8px);
+  -webkit-backdrop-filter: blur(6.8px); */
+  /* From https://css.glass */
+  /* From https://css.glass */
+  background: rgba(204, 157, 105, 0.63);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.7px);
+  -webkit-backdrop-filter: blur(10.7px);
+  border: 1px solid rgba(204, 157, 105, 0.06);
 }
 
 .qc_centered h2 {
@@ -1416,7 +1475,6 @@ div.text-container {
 
 .description_qc {
   /* background-color: yellow; */
-  direction: rtl;
   width: 90%;
   margin: auto;
 }
@@ -1490,11 +1548,12 @@ div.text-container {
 @media screen and (max-width: 768px) {
 }
 
-/* business unit  */
+/* business unit ------------------------------------------------------------  */
 .commercialdepartment_container {
-  /* background-color: aqua; */
-  width: 93%;
+  /* display: flex; */
+  /* flex-direction: column; */
   margin: auto;
+  width: 100%;
 }
 
 .cd_Header {
@@ -1503,14 +1562,16 @@ div.text-container {
   text-align: center;
   align-items: center;
   /* padding-top: 1rem; */
-  width: 98%;
+  width: 100%;
   margin: auto;
+  background-color: #53b6b3;
 }
 
 .cd_Header img {
+  padding-top: 5rem;
   display: flex;
   margin: auto;
-  width: 90%;
+  width: 50%;
   /* border-radius: 40px; */
 }
 
@@ -1556,6 +1617,7 @@ div.text-container {
 .sale_container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   width: 95%;
   margin: auto;
   background: #f8f8ff;
@@ -1563,18 +1625,19 @@ div.text-container {
   backdrop-filter: blur(5.5px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  text-align: center;
+  /* text-align: center; */
   padding: 1rem;
   align-items: center;
 }
 
-.sale_left {
-  flex: 1;
+.sale_container h2 {
+  color: #000000;
+  font-size: 1.8rem;
 }
 
 .sale_left img {
   border-radius: 2rem;
-  width: 100%;
+  width: 80%;
 }
 
 .sale_right {
@@ -1585,10 +1648,11 @@ div.text-container {
 }
 
 .sale_right ul {
+  list-style: outside;
   padding-right: 2rem;
 }
 
-/* Quality control assets */
+/* Quality control assets ---------------------------------------- */
 .qc_assets_container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
@@ -1608,34 +1672,82 @@ div.text-container {
 }
 
 .qc_assets_card h3 {
-  color: white;
-  font-size: 24px;
-  margin: 20px 0 0 20px;
+  direction: ltr;
+  color: black;
+  font-size: 20px;
+  margin: 15px 0 0 20px;
 }
 
 .qc_assets_card p {
-  color: white;
+  display: none;
+  /* color: white; */
   font-weight: 400;
   font-size: 16px;
   align-self: end;
-  margin: 0 0 20px 20px;
+  /* margin: 0 0 20px 20px; */
   letter-spacing: 0.5px;
+  direction: ltr;
+  background-color: lightgray;
+  /* bottom: 0; */
 }
 
 .qc_assets_card img {
+  display: flex;
+  margin: auto;
+  left: 2rem;
+  margin-top: 1rem;
+  padding: 2rem 1rem 0 0;
   position: absolute;
-  top: 0;
-  height: 110%;
-  width: 100%;
+  height: 90%;
+  width: 70%;
   z-index: -1;
   transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .qc_assets_card:hover {
   transform: scale(1.035, 1.035);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
 }
 
 .qc_assets_card:hover img {
   transform: translateY(-10px);
+}
+
+/*======================
+    404 page
+=======================*/
+
+.page_404 {
+  padding: 40px 0;
+  background: #fff;
+  font-family: "Arvo", serif;
+}
+
+.page_404 img {
+  width: 100%;
+}
+
+.four_zero_four_bg {
+  background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+  height: 429px;
+  background-position: center;
+}
+
+.four_zero_four_bg h1 {
+  font-size: 80px;
+}
+
+.four_zero_four_bg h3 {
+  font-size: 80px;
+}
+
+.link_404 {
+  color: #fff !important;
+  padding: 10px 20px;
+  background: #39ac31;
+  margin: 20px 0;
+  display: inline-block;
+}
+.contant_box_404 {
+  margin-top: -50px;
 }
