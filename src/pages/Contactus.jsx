@@ -1,6 +1,9 @@
 import React from "react";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 
 const Contactus = () => {
+  const position = [35.48213, 51.335336];
+
   return (
     <>
       <br />
@@ -63,7 +66,51 @@ const Contactus = () => {
           </div>
         </div>
       </div>
-      <h2>Map</h2>
+      <div className="map_container">
+        {/* <Map center={[35.48213, 51.335336]} zoom={17}>
+          <TileLayer
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+            url="https://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}"
+            Zoom={30}
+            subdomains={["mt1", "mt2", "mt3"]}
+          />
+          <Marker position={position}>
+            <Popup>Mehr Aein Pars</Popup>
+          </Marker>
+        </Map> */}
+
+        {/* <MapContainer center={position} zoom={17} scrollWheelZoom={false}>
+          <TileLayer
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          />
+          <Marker position={position}>
+            <Popup>
+              A pretty CSS3 popup. <br /> Easily customizable.
+            </Popup>
+          </Marker>
+        </MapContainer> */}
+
+        <MapContainer
+          // center={{ lat: 51.505, lng: -0.09 }}
+          zoom={14}
+          style={{ height: "50vh", width: "100%" }}
+          // scrollWheelZoom={false}
+          center={position}
+          scrollWheelZoom={false}
+        >
+          <TileLayer
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            // url="https://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}"
+            // subdomains={["mt1", "mt2", "mt3"]}
+          />
+          <Marker position={position}>
+            <Popup>MEHRAEINPARS PAPER MILL COMPANY</Popup>
+          </Marker>
+        </MapContainer>
+      </div>
     </>
   );
 };

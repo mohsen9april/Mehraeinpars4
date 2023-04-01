@@ -989,6 +989,16 @@ section.module.parallax-12 {
 
 /* ------ Contact us -------------------------------------- */
 
+/* map  */
+/* .map_container {
+  height: 40vh;
+  width: 70%;
+} */
+.MapContainer {
+  width: 1200px;
+  height: 50vh;
+}
+
 .contactusheader {
   display: flex;
   flex-wrap: wrap;
