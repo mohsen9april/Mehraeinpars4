@@ -1452,7 +1452,8 @@ div.text-container {
   -webkit-backdrop-filter: blur(6.8px); */
   /* From https://css.glass */
   /* From https://css.glass */
-  background: rgba(204, 157, 105, 0.63);
+  /* background: rgba(204, 157, 105, 0.63); */
+  background: #53b6b3;
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10.7px);
@@ -1643,13 +1644,13 @@ div.text-container {
 .sale_right {
   /* direction: rtl; */
   /* text-align: right; */
-  padding: 4rem 2rem;
+  padding: 3rem 1rem;
   flex: 1;
 }
 
 .sale_right ul {
   list-style: outside;
-  padding-right: 2rem;
+  padding-right: 1rem;
 }
 
 /* Quality control assets ---------------------------------------- */

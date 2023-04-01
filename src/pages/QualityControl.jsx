@@ -10,7 +10,7 @@ const QualityControl = () => {
         <div className="topheader_qc">
           <img src="./images/QC2.png" alt="/" />
           <div class="qc_centered">
-            <h2 style={{ color: "black" }}>واحد کنترل کیفیت </h2>
+            <h2 style={{ color: "black", textTransform: "uppercase" }}>{t("qc")}</h2>
           </div>
         </div>
       </div>

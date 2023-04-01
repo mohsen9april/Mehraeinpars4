@@ -39,14 +39,14 @@ const Businessunit = () => {
             <img src="./images/sale2.jpg" alt="An imageshowcasingproductsonsale." />
           </div>
           <div data-aos-duration="1000" data-aos="fade-left" className="sale_right">
-            <h2>مهمترین فعالیت‌های تیم فروش ما</h2>
+            <h2> {t("businesstext1")}</h2>
             <ul data-aos-duration="1800" data-aos="fade-left">
-              <li>معرفی کامل و همه جانبه مشخصات دقیق محصولات</li>
-              <li>شناخت نیازهای بازار و بررسی درخواست‌های سفارشی‌سازی مشتریان</li>
-              <li>انجام فعالیت‌های صادراتی و بازرگانی </li>
-              <li>ارائه هماهنگی‌های لازم با واحد بازاریابی</li>
-              <li>بهینه‌سازی ارتباط با مشتری</li>
-              <li>ارتباط مستقیم با واحد صادرات و پیگیری فرآیندهای آن</li>
+              <li>{t("businesstext2")}</li>
+              <li>{t("businesstext3")}</li>
+              <li>{t("businesstext4")}</li>
+              <li>{t("businesstext5")}</li>
+              <li>{t("businesstext6")}</li>
+              <li>{t("businesstext7")}</li>
             </ul>
           </div>
         </div>
@@ -63,11 +63,11 @@ const Businessunit = () => {
 
           {/* Sale right section */}
           <div data-aos-duration="1000" data-aos="fade-right" className="sale_right">
-            <h2>واحد‌های زیر مجموعه‌ واحد فروش شرکت</h2>
+            <h2> {t("businesstext8")}</h2>
             <ul>
-              <li>واحد بازاریابی</li>
-              <li>واحد صادرات</li>
-              <li>واحد ارتباط با مشتری</li>
+              <li>{t("businesstext9")}</li>
+              <li>{t("businesstext10")}</li>
+              <li>{t("businesstext11")}</li>
             </ul>
           </div>
         </div>

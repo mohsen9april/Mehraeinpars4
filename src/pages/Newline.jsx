@@ -1,6 +1,9 @@
 import React, { Fragment } from "react";
+import { useTranslation } from "react-i18next";
 
 const Newline = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <br />
@@ -9,7 +12,7 @@ const Newline = () => {
       <br />
       <Fragment>
         <section style={{ height: "9rem" }} class="slide" id="slide2">
-          <h1>عملیات خاک برداری</h1>
+          <h1>{t("newlinehead1")}</h1>
         </section>
         <br />
         <div>
@@ -31,7 +34,7 @@ const Newline = () => {
       <br />
       <Fragment>
         <section class="slide" id="slide2">
-          <h1>فاز دوم پروژه فنداسیون </h1>
+          <h1>{t("newlinehead2")}</h1>
         </section>
         <div>
           <br />
@@ -54,7 +57,7 @@ const Newline = () => {
 
       <Fragment>
         <section class="slide" id="slide2">
-          <h1>فاز سوم پروژه ستون </h1>
+          <h1>{t("newlinehead3")}</h1>
         </section>
         <div>
           <br />
@@ -76,7 +79,7 @@ const Newline = () => {
       <br />
 
       <section class="slide" id="slide2">
-        <h1>کاغذسازی مهرآیین پارس </h1>
+        <h1 style={{ textTransform: "uppercase" }}>{t("app_title")}</h1>
       </section>
 
       <div className="Newline_divider">
