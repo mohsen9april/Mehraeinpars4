@@ -37,6 +37,9 @@ const Footer = () => {
           </li>
         </ul>
       </div>
+      <div class="copyrightText">
+        <p>Copyright © 2022 Mehraeinpars. All rights reserved</p>
+      </div>
     </>
   );
 };

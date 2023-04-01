@@ -975,6 +975,18 @@ section.module.parallax-12 {
   }
 }
 
+.copyrightText {
+  width: 100%;
+  background: linear-gradient(315deg, #3e3b3b, #020202);
+  text-align: center;
+  font-weight: 300;
+  /* padding: 12px 40px; */
+}
+
+.copyrightText p {
+  color: #999;
+}
+
 /* ------ Contact us -------------------------------------- */
 
 .contactusheader {
@@ -983,13 +995,13 @@ section.module.parallax-12 {
   margin: auto;
   justify-content: center;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
-  width: 80%;
+  width: 100%;
 }
 
 .left {
   /* background-color: red; */
   text-align: center;
-  width: 300px;
+  width: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1028,7 +1040,7 @@ section.module.parallax-12 {
   background: #f9f9f9;
   padding: 25px;
   margin: 50px 0;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  /* box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); */
 }
 
 #contactus h3 {
