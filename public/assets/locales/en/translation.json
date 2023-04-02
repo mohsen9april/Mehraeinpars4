@@ -33,8 +33,9 @@
   "financialunit": "Financial Unit",
   "links": " Links ",
   "iran": " Iran ",
-  "address": " No.8 Besat alley , in front of Mahdiabad , 20Km of Tehran - Qom old reoad ",
-  "phone": " (98)21 5654 66-20 ",
+  "address": " No.8 Besat alley, in front of Mahdiabad, 20Km of Tehran, Qom old reoad,  Tehran, Iran",
+  "phone1": " (98)21 5654 66-20 ",
+  "phone2": " (98)21 5654 04-53 ",
   "description": "MehraeinPars uses the latest advanced technologies to meet the global quality standards in various processes and infrastructure",
   "productstestlinertextone": "Testliner paper is produced entirely from recycled fibers, but in its production process, additives such as starch (in the form of starch on one or both sides of the paper) and other additives are used for filling and color",
   "productstestlinertexttwo": "The test liner paper, which is used as the top layer of the cardboard sheet, has special technical specifications. Water absorption of the upper layer of paper is less than its lower layer. The low water absorption of the upper layer is due to the protection of the cardboard from absorbing the humidity of the environment and increasing its printability, and the water absorption of the lower layer is due to the better adhesion on the floating paper. Also, Testliner paper has suitable surface resistances for high quality printing.",
@@ -64,5 +65,10 @@
   "qceq": "laboratory equipments",
   "newlinehead1": "Excavation and Trenching",
   "newlinehead2": "Foundation",
-  "newlinehead3": "Concreting of columns, pedestals and footings"
+  "newlinehead3": "Concreting of columns, pedestals and footings",
+  "placeholder1": "Your name",
+  "placeholder2": "Your Email Address",
+  "placeholder3": "Your Phone Number (optional)",
+  "placeholder4": "Your Web Site (optional)",
+  "placeholder5": "Type your message here..."
 }

@@ -73,7 +73,7 @@ const Header = () => {
 
   return (
     <div>
-      <div className="header" id="navbar" style={{ transition: "all 1s" }}>
+      <div className="header" id="navbar" style={{ transition: "all 3s" }}>
         <nav ref={navRef}>
           <NavLink
             to="/"

@@ -11,6 +11,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "flag-icon-css/css/flag-icon.min.css";
 import { BrowserRouter } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
+import "font-awesome/css/font-awesome.min.css";
 
 i18n
   .use(initReactI18next)

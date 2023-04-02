@@ -1004,6 +1004,7 @@ section.module.parallax-12 {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin: auto;
 }
 
 .contactusheader .left,
@@ -1012,14 +1013,17 @@ section.module.parallax-12 {
   min-width: 300px;
   margin: 10px;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
   overflow: hidden;
   background-color: #f7f7f7;
+  margin: auto;
+  height: 65vh;
+  padding: 0 3rem;
 }
 
 .contactusheader .left .details,
 .contactusheader .right .contactus_container {
-  padding: 20px;
+  padding: 30px;
 }
 
 .contactusheader .left .details i,
@@ -1032,7 +1036,6 @@ section.module.parallax-12 {
 .contactusheader .right .contactus_container input,
 .contactusheader .right .contactus_container textarea,
 .contactusheader .right .contactus_container button {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 16px;
   color: #444;
   line-height: 24px;
@@ -1049,7 +1052,7 @@ section.module.parallax-12 {
 .contactusheader .right .contactus_container button {
   font-size: 24px;
   margin-right: 10px;
-  color: #dc3545;
+  color: #111111;
 }
 
 .contactusheader .right .contactus_container input,
@@ -1081,11 +1084,13 @@ section.module.parallax-12 {
   background-color: #4caf50;
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 10px 60px;
   border-radius: 4px;
   font-size: 16px;
   text-align: center;
   cursor: pointer;
+  display: flex;
+  margin: auto;
 }
 
 /*Button hover effect*/
