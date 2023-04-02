@@ -1,7 +1,10 @@
 import React from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import { useTranslation } from "react-i18next";
 
 const Contactus = () => {
+  const { t } = useTranslation();
+
   const position = [35.48213, 51.335336];
 
   return (
@@ -14,6 +17,8 @@ const Contactus = () => {
       <div class="contactusheader">
         <div class="left">
           <div class="address details">
+            <i class="fas fa-map-marker-alt"></i>
+            <i class="fa fa-map-marker"></i>
             <i class="fas fa-map-marker-alt"></i>
             <div class="topic">Address</div>
             <div class="text-one">Surkhet, NP12</div>
@@ -35,8 +40,8 @@ const Contactus = () => {
         <div class="right">
           <div class="contactus_container">
             <form id="contactus" action="" method="post">
-              <h3>Contact Form</h3>
-              <h4>Contact us for custom quote</h4>
+              <h3>{t("contactus")}</h3>
+              {/* <h4>Contact us for custom quote</h4> */}
               <fieldset>
                 <input placeholder="Your name" type="text" tabindex="1" required autofocus />
               </fieldset>

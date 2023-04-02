@@ -998,8 +998,110 @@ section.module.parallax-12 {
   width: 1200px;
   height: 50vh;
 }
-
+/* ---------------------------- */
 .contactusheader {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactusheader .left,
+.contactusheader .right {
+  flex: 1;
+  min-width: 300px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  background-color: #f7f7f7;
+}
+
+.contactusheader .left .details,
+.contactusheader .right .contactus_container {
+  padding: 20px;
+}
+
+.contactusheader .left .details i,
+.contactusheader .left .details .topic,
+.contactusheader .left .details .text-one,
+.contactusheader .left .details .text-two,
+.contactusheader .right .contactus_container h3,
+.contactusheader .right .contactus_container h4,
+.contactusheader .right .contactus_container fieldset,
+.contactusheader .right .contactus_container input,
+.contactusheader .right .contactus_container textarea,
+.contactusheader .right .contactus_container button {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  color: #444;
+  line-height: 24px;
+}
+
+.contactusheader .left .details .topic,
+.contactusheader .right .contactus_container h3,
+.contactusheader .right .contactus_container h4 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contactusheader .left .details i,
+.contactusheader .right .contactus_container button {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #dc3545;
+}
+
+.contactusheader .right .contactus_container input,
+.contactusheader .right .contactus_container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #f7f7f7;
+  resize: none;
+}
+
+.contactusheader .right .contactus_container input[type="submit"] {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 576px) {
+  .contactusheader .left,
+  .contactusheader .right {
+    min-width: 400px;
+  }
+}
+
+#contact-submit {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/*Button hover effect*/
+#contact-submit:hover {
+  background-color: #3e8e41;
+}
+
+/*Button active effect*/
+#contact-submit:active {
+  background-color: #3e8e41;
+  transform: translateY(1px);
+}
+
+/* ------------------------ */
+
+/* .contactusheader {
   display: flex;
   flex-wrap: wrap;
   margin: auto;
@@ -1009,7 +1111,6 @@ section.module.parallax-12 {
 }
 
 .left {
-  /* background-color: red; */
   text-align: center;
   width: 600px;
   display: flex;
@@ -1019,7 +1120,6 @@ section.module.parallax-12 {
 }
 
 .right {
-  /* background-color: lightblue; */
   text-align: center;
   line-height: 50px;
   width: 640px;
@@ -1050,7 +1150,6 @@ section.module.parallax-12 {
   background: #f9f9f9;
   padding: 25px;
   margin: 50px 0;
-  /* box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); */
 }
 
 #contactus h3 {
@@ -1146,7 +1245,7 @@ fieldset {
 
 :-ms-input-placeholder {
   color: #888;
-}
+} */
 
 /* ------ AboutUs --------------------------------------------- */
 
