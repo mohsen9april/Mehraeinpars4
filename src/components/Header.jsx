@@ -73,7 +73,7 @@ const Header = () => {
 
   return (
     <div>
-      <div className="header" id="navbar" style={{ transition: "all 3s" }}>
+      <div className="header" id="navbar" style={{ transition: "all 1s" }}>
         <nav ref={navRef}>
           <NavLink
             to="/"
@@ -107,11 +107,14 @@ const Header = () => {
                   <i class="fab fa-twitter"></i>
                 </span>
               </li>
-              <li class="navicon instagram">
-                <span>
-                  <i class="fab fa-instagram"></i>
-                </span>
-              </li>
+              <a href="https://www.instagram.com/mehraeinpars/" target="_blank" rel="noreferrer">
+                <li class="navicon instagram">
+                  <span>
+                    <i class="fab fa-instagram"></i>
+                  </span>
+                </li>
+              </a>
+
               <li class="navicon youtube">
                 <span>
                   <i class="fab fa-youtube"></i>

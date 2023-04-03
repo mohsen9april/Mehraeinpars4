@@ -78,7 +78,6 @@ const Home = () => {
       <br />
 
       <h2 style={{ textAlign: "center" }} data-aos-duration="1800" data-aos="fade-down">
-        {" "}
         {t("mehraeinParsproducts")}
       </h2>
 
@@ -124,7 +123,7 @@ const Home = () => {
       <div data-aos-duration="1800" data-aos="slide-up" className="home_ourway">
         <h2 style={{ textAlign: "center" }}> {t("ourresponsibility")}</h2>
         <img
-          style={{ display: "flex", margin: "auto", width: "80%" }}
+          style={{ display: "flex", margin: "auto", width: "70%" }}
           src="./images/ourway.png"
           alt="/"
         />
@@ -271,7 +270,7 @@ const Home = () => {
 
       <div data-aos="zoom-in-down" data-aos-duration="1800">
         <img
-          style={{ display: "flex", margin: "auto", width: "80%" }}
+          style={{ display: "flex", margin: "auto", width: "70%" }}
           src="./images/home1.png"
           alt="/"
         />

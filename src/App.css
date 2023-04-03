@@ -383,7 +383,7 @@ p {
   position: relative;
   z-index: 5;
   background-image: url(https://assets.codepen.io/1920639/contact_bg.jpg);
-  padding-top: 1rem;
+  padding: 2rem 14rem;
 }
 
 .contact_area::before {
@@ -446,8 +446,8 @@ p.form-message.error.form-message.error {
   cursor: pointer;
   text-decoration: none;
   line-height: 20px;
-  border-radius: 4px;
-  padding: 1vh 2vh;
+  border-radius: 8px;
+  padding: 1vh 4vh;
   letter-spacing: 0.02rem;
   background: #664ef7;
   color: white;
@@ -1005,12 +1005,14 @@ section.module.parallax-12 {
   justify-content: center;
   align-items: center;
   margin: auto;
+  padding-top: 6rem;
+  background-color: #f7f7f7;
 }
 
 .contactusheader .left,
 .contactusheader .right {
-  flex: 1;
-  min-width: 300px;
+  /* flex: 1; */
+  /* min-width: 300px; */
   margin: 10px;
   border-radius: 5px;
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
@@ -1019,6 +1021,16 @@ section.module.parallax-12 {
   margin: auto;
   height: 65vh;
   padding: 0 3rem;
+  /* box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); */
+}
+
+.contactusheader .left {
+  width: 600px;
+  padding-left: 10rem;
+}
+.contactusheader .right {
+  width: 800px;
+  padding: 0 8rem;
 }
 
 .contactusheader .left .details,

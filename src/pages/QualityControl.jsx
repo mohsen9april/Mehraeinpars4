@@ -8,7 +8,8 @@ const QualityControl = () => {
     <div className="qualitycontrol_container">
       <div className="header_qc">
         <div className="topheader_qc">
-          <img src="./images/QC2.png" alt="/" />
+          {/* <img src="./images/QC2.png" alt="/" /> */}
+          <img src="https://s2.uupload.ir/files/qc2_4zqj.png" alt="/" />
           <div class="qc_centered">
             <h2 style={{ color: "black", textTransform: "uppercase" }}>{t("qc")}</h2>
           </div>

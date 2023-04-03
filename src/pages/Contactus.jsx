@@ -9,11 +9,6 @@ const Contactus = () => {
 
   return (
     <>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
       <div class="contactusheader">
         <div style={{ textAlign: "center" }} class="left">
           <div class="address details">
@@ -27,7 +22,10 @@ const Contactus = () => {
           </div>
           <div class="email details">
             <i class="fas fa-envelope"></i>
-            <div style={{ textTransform: "uppercase", color: "#e0ac1c" }} class="text-two">
+            <div
+              style={{ textTransform: "uppercase", color: "#e0ac1c", fontWeight: "bold" }}
+              class="text-two"
+            >
               contact@mehraeinpars.com
             </div>
           </div>

@@ -17,7 +17,8 @@ const Products = () => {
     <>
       {/* <!--start Recipes--> */}
       <div class="recipes">
-        <img src="./images/productsbanner.jpg" alt="/" />
+        {/* <img src="./images/productsbanner.jpg" alt="/" /> */}
+        <img src="https://s2.uupload.ir/files/productsbanner_xkjy.jpg" alt="/" />
       </div>
       {/* <!--End Recipes--> */}
 
@@ -29,7 +30,12 @@ const Products = () => {
         <section class="main-card">
           <div class="card-content">
             <div class="content-left">
-              <img class="full-img" src="./images/testliner.jpg" alt="/" />
+              <img
+                style={{ objectFit: "revert-layer" }}
+                class="full-img"
+                src="./images/testliner.jpg"
+                alt="/"
+              />
             </div>
             <div class="content-right">
               <h2 style={{ textAlign: "center" }}>{t("testliner")} </h2>

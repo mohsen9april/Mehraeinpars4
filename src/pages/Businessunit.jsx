@@ -18,7 +18,8 @@ const Businessunit = () => {
     <div className="commercialdepartment_container">
       {/* <h2>Commercial-Department</h2> */}
       <div className="cd_Header">
-        <img src="./images/businessbanner.jpg" alt="/" />
+        {/* <img src="./images/businessbanner.jpg" alt="/" /> */}
+        <img src="https://s2.uupload.ir/files/businessbanner_2nub.jpg" alt="/" />
         {/* <div class="centered">
           <h2 style={{ color: "white" }}>{t("businessunitmehr")}</h2>
         </div> */}
