@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import { useTranslation } from "react-i18next";
 
@@ -6,6 +6,16 @@ const Contactus = () => {
   const { t } = useTranslation();
 
   const position = [35.48213, 51.335336];
+
+  // useEffect(() => {
+  //   const btn = document.querySelector("#btn");
+  //   const btnText = document.querySelector("#btnText");
+
+  //   btn.onclick = () => {
+  //     btnText.innerHTML = "Thanks";
+  //     btn.classList.add("active");
+  //   };
+  // }, []);
 
   return (
     <>
@@ -61,6 +71,14 @@ const Contactus = () => {
                 <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">
                   Submit
                 </button>
+                {/* <button id="btn">
+                  <p id="btnText">Submit</p>
+                  <div class="check-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                      <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                    </svg>
+                  </div>
+                </button> */}
               </fieldset>
             </form>
           </div>

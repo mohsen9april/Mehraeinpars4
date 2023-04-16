@@ -174,7 +174,7 @@ const Home = () => {
       </div> */}
 
       {/* <!--====== CONTACT PART START ======--> */}
-      <section id="contact" class="contact_area bg_cover pt-120 pb-130">
+      {/* <section id="contact" class="contact_area bg_cover pt-120 pb-130">
         <div class="container contact_container">
           <div class="row justify-content-center">
             <div class="col-lg-6">
@@ -187,10 +187,6 @@ const Home = () => {
                 >
                   {t("contactus")}
                 </h4>
-                {/* <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                  tempor invidunt labor dolore.
-                </p> */}
               </div>
             </div>
           </div>
@@ -247,7 +243,7 @@ const Home = () => {
             </div>
           </form>
         </div>
-      </section>
+      </section> */}
       {/* <!--====== CONTACT PART ENDS ======--> */}
 
       <br />

@@ -12,11 +12,13 @@ import Contactus from "./pages/Contactus";
 import Aboutus from "./pages/Aboutus";
 import Error from "./pages/Error";
 import Footer from "./pages/Footer";
+import ButtonScrolltoTop from "./components/ButtonScrolltoTop/ButtonScrolltoTop";
 
 function App() {
   return (
     <div>
       <Header />
+      <ButtonScrolltoTop />
       <div>
         <Routes>
           <Route excact path="/" element={<Home />} />
@@ -31,6 +33,7 @@ function App() {
       </div>
 
       <Footer />
+      {/* <Footerbox /> */}
     </div>
   );
 }
